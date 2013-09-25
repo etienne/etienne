@@ -5,19 +5,20 @@ body {
   font-family: "Noticia Text";
   color: #222;
   width: 800px;
-  margin: 4em auto;
+  margin: 2em;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 h1, h2 {
-  font-size: 64px;
-  line-height: 80px;
-  font-weight: normal;
+  font-size: 18px;
   margin: 0;
 }
 
 h2 {
   color: #ccc;
   margin-bottom: 3em;
+  font-weight: normal;
 }
 
 p {
@@ -39,4 +40,10 @@ a {
 a:hover {
   color: #222;
   border-bottom-color: #222;
+}
+
+footer {
+  position: absolute;
+  bottom: 2em;
+  left: 2em;
 }
