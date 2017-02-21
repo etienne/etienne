@@ -1,3 +1,8 @@
+title: Étienne Després
+author: Étienne Després
+description: "Design, programmation, 3D, illustration et autres patentes."
+
 collections:
   projects:
+    layout: default
     output: true

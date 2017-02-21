@@ -1,0 +1,44 @@
+body {
+  @extend %normal-size;
+  background-color: white;
+  font-family: "Questa Sans";
+  color: $text-color;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  font-weight: normal;
+  margin: 0;
+}
+
+h1 {
+  @extend %normal-size;
+  margin-bottom: 4px;
+}
+
+h2 {
+  @extend %big-size;
+}
+
+a {
+  color: $text-color;
+  text-decoration: none;
+  border-bottom: 2px solid rgba($text-color, 0.6);
+  
+  &:hover {
+    border-bottom-color: $text-color;
+  }
+}
+
+p {
+  @extend %medium-size;
+  margin: 0;
+  max-width: 620px;
+}
+
+footer {
+  position: absolute;
+  bottom: 2em;
+  left: 2em;
+}

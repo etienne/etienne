@@ -1,0 +1,15 @@
+---
+title: Apollo 11
+date: 2017-02-20
+categories: programmation illustration
+layout: project
+---
+
+<h1>Apollo 11</h1>
+<p>Jeu vidéo. Un drame spatial qui retrace le fil de la catastrophe lunaire du 20&nbsp;juillet&nbsp;1969. En production, collectif <a href="http://grandbruit.ca">Grand bruit</a>.</p>
+
+<ul class="categories">
+{% for category in page.categories %}
+  <li><a href="#">{{ category | capitalize }}</a></li>
+{% endfor %}
+</ul>
