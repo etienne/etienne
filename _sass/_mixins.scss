@@ -1,19 +1,71 @@
-%small-size {
+// Typography
+
+@mixin small-size {
+  font-size: 12px;
+  line-height: 18px;
+
+  @include tablet {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+@mixin normal-size {
   font-size: 14px;
   line-height: 21px;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 29px;
+  }
 }
 
-%normal-size {
-  font-size: 18px;
-  line-height: 26px;
+@mixin medium-size {
+  font-size: 22px;
+  line-height: 31px;
+
+  @include tablet {
+    font-size: 30px;
+    line-height: 40px;
+  }
 }
 
-%medium-size {
+@mixin big-size {
   font-size: 30px;
-  line-height: 42px;
+  line-height: 40px;
+
+  @include tablet {
+    font-size: 48px;
+    line-height: 60px;
+  }
 }
 
-%big-size {
-  font-size: 58px;
-  line-height: 70px;
+// Layout
+
+@mixin no-bullets {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin container {
+  width: 92%;
+  max-width: 1152px;
+  margin: 0 auto;
+}
+
+@mixin breakpoint($min-width) {
+  @media only screen and (min-width : $min-width) {
+    @content
+  }
+}
+
+@mixin tablet        { @include breakpoint($tablet)        { @content } }
+@mixin desktop       { @include breakpoint($desktop)       { @content } }
+@mixin desktop-large { @include breakpoint($desktop-large) { @content } }
+
+@mixin mobile-only {
+  @media only screen and (max-width : $tablet - 1px) {
+    @content
+  }
 }

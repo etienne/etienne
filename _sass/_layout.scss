@@ -1,0 +1,10 @@
+section.intro {
+  @include container;
+  @include big-size;
+  
+  p {
+    @include desktop {
+      padding-left: 50%;
+    }
+  }
+}

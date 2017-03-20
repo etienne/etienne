@@ -2,4 +2,15 @@
 layout: default
 ---
 
-{{ site.projects }}
+<section class="intro">
+  <p>Salut. C’est pas vrai que je suis cool, mais je fais du design, de la vidéo, de la 3D, plein d’affaires.</p>
+</section>
+
+<section class="projects video">
+  {% for project in site.projects %}
+    <article class="{{ project.slug }}">
+      <a href="#"><span>{{ project.title }}</span></a>
+    </article>
+  {% endfor %}
+</section>
+

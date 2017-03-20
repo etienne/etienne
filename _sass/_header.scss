@@ -1,10 +1,62 @@
 header {
-  background-color: $primary-color;
-  padding: 80px 52px;
+  @include container;
+  padding: 4% 0;
   color: white;
   
-  h2 {
-    margin: 30px 0;
-    max-width: 820px;
+  h1 {
+    float: left;
+    
+    @include tablet {
+      width: 50%;
+    }
+  }
+  
+  nav {
+    ul {
+      @include no-bullets;
+      float: right;
+
+      @include tablet {
+        float: left;
+        width: 50%;
+      }
+      
+      li {
+        float: left;
+        margin-left: 18px;
+        
+        @include tablet {
+          margin-left: 22px;
+        }
+        
+        @include desktop {
+          margin-left: 32px;
+        }
+        
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+      
+      a {
+        display: block;
+        
+        &.current {
+          display: none;
+          color: $primary-color;
+          border-bottom: 2px solid;
+          
+          @include tablet {
+            display: block;
+          }
+        }
+        
+        span.expanded-word {
+          @include mobile-only {
+            display: none;
+          }
+        }
+      }
+    }
   }
 }

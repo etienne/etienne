@@ -1,10 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  @extend %normal-size;
-  background-color: white;
+  @include normal-size;
+  background-color: $background-color;
   font-family: "Questa Sans";
   color: $text-color;
   margin: 0;
   padding: 0;
+}
+
+section {
+  clear: both;
 }
 
 h1, h2 {
@@ -13,32 +21,15 @@ h1, h2 {
 }
 
 h1 {
-  @extend %normal-size;
+  @include normal-size;
   margin-bottom: 4px;
-}
-
-h2 {
-  @extend %big-size;
 }
 
 a {
   color: $text-color;
   text-decoration: none;
-  border-bottom: 2px solid rgba($text-color, 0.6);
   
   &:hover {
-    border-bottom-color: $text-color;
+    border-bottom: 2px solid;
   }
-}
-
-p {
-  @extend %medium-size;
-  margin: 0;
-  max-width: 620px;
-}
-
-footer {
-  position: absolute;
-  bottom: 2em;
-  left: 2em;
 }
