@@ -1,0 +1,25 @@
+body > article {
+}
+
+body.apollo-11 {
+  background: #042431 url(../images/stars.png);
+  background-size: contain;
+  
+  section.intro {
+    img {
+      display: block;
+      margin: 0.6em auto 1em;
+      width: 3.5em;
+      
+      @include tablet {
+        margin: 1.1em auto 1.4em;
+        width: auto;
+      }
+
+      @include desktop {
+        position: absolute;
+        padding-left: 12%;
+      }
+    }
+  }
+}

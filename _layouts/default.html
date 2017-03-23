@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html lang="fr">
   {% include head.html %}
-  <body>
+  <body{% if page.slug %} class="{{ page.slug }}"{% endif %}>
     {% include header.html %}
     {{ content }}
     {% include footer.html %}
