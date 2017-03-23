@@ -43,14 +43,15 @@ body > header {
         display: block;
         color: $primary-color;
         border-bottom: 1px solid;
+        transition: border-color $transition-speed;
         
         @include tablet {
           color: $text-color;
-          border-bottom: none;
+          border-bottom: 2px solid transparent;
         }
 
         &:hover {
-          border-bottom: 2px solid;
+          border-bottom: 2px solid $text-color;
         }
         
         &.current {

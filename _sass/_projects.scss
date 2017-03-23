@@ -1,6 +1,6 @@
 section.projects {
   @include clearfix;
-  margin-top: 2.5em;
+  margin-top: 2em;
 
   @include tablet {
     margin-top: 4em;
@@ -68,6 +68,11 @@ section.projects {
       width: 100%;
       height: 100%;
       background-color: rgba($background-color, 0.2);
+      transition: background-color $transition-speed;
+      
+      &:hover {
+        background-color: rgba($background-color, 0.3);
+      }
       
       span {
         position: absolute;
