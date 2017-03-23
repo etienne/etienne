@@ -33,7 +33,7 @@ section.projects {
       
       @include desktop {
         @include medium-text;
-        margin-top: -2.55em;
+        margin-top: -2.52em;
       }
     }
   }
@@ -53,6 +53,11 @@ section.projects {
     @include tablet {
       width: 33.33%;
       padding-bottom: 18.7498125%;
+    }
+    
+    @include desktop-large {
+      width: 25%;
+      padding-bottom: 14.0625%;
     }
     
     &.apollo-11 {

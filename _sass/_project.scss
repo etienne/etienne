@@ -1,4 +1,47 @@
 body > article {
+  main {
+    @include container;
+    @include clearfix;
+    
+    ul.roles {
+      @include no-bullets;
+      margin-left: 2px;
+      margin-right: -2px;
+      margin-top: 2px;
+      
+      @include tablet {
+        width: 46%;
+        margin-top: 0.6em;
+        float: left;
+      }
+
+      li a {
+        float: left;
+        border: 2px solid;
+        padding: 0.9em 1.3em 1em;
+        margin-left: -2px;
+        margin-top: -2px;
+      }
+    }
+    
+    div.description {
+      @include medium-text;
+      margin-bottom: 1em;
+      
+      @include tablet {
+        width: 50%;
+        float: right;
+      }
+
+      a {
+        border-bottom: 2px solid;
+        
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+  }
 }
 
 body.apollo-11 {
@@ -9,17 +52,32 @@ body.apollo-11 {
     img {
       display: block;
       margin: 0.6em auto 1em;
-      width: 3.5em;
+      width: 6em;
       
       @include tablet {
-        margin: 1.1em auto 1.4em;
-        width: auto;
+        margin: 1em auto;
       }
 
       @include desktop {
         position: absolute;
-        padding-left: 12%;
+        margin-left: 2em;
       }
+
+      @include desktop-large {
+        width: 7em;
+      }
+    }
+  }
+  
+  & > footer {
+    margin-top: -12%;
+    padding-top: 70%;
+    background: #ce9c71 url(../images/footer-apollo.png) no-repeat 50% 0;
+    background-size: 130%;
+    
+    @include desktop {
+      padding-top: 50%;
+      background-size: contain;
     }
   }
 }

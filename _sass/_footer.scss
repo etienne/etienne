@@ -1,14 +1,16 @@
 body > footer {
-  @include container;
-  @include clearfix;
-  padding: 4em 0;
+  & > div {
+    @include container;
+    @include clearfix;
+    padding: 4em 0;
 
-  @include tablet {
-    padding: 6em 0;
-  }
+    @include tablet {
+      padding: 6em 0;
+    }
 
-  @include desktop {
-    padding: 8em 0 10em;
+    @include desktop {
+      padding: 8em 0 10em;
+    }
   }
   
   address {
