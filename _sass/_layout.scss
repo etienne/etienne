@@ -3,6 +3,8 @@ section.intro {
   @include big-size;
   
   p {
+    margin: 0.6em 0;
+    
     @include desktop {
       padding-left: 50%;
     }

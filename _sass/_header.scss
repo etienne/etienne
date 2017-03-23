@@ -1,5 +1,6 @@
-header {
+body > header {
   @include container;
+  @include clearfix;
   padding: 4% 0;
   color: white;
   
@@ -40,6 +41,17 @@ header {
       
       a {
         display: block;
+        color: $primary-color;
+        border-bottom: 1px solid;
+        
+        @include tablet {
+          color: $text-color;
+          border-bottom: none;
+        }
+
+        &:hover {
+          border-bottom: 2px solid;
+        }
         
         &.current {
           display: none;

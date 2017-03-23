@@ -7,10 +7,16 @@ layout: default
 </section>
 
 <section class="projects video">
-  {% for project in site.projects %}
-    <article class="{{ project.slug }}">
-      <a href="#"><span>{{ project.title }}</span></a>
-    </article>
-  {% endfor %}
+  <header>
+    <h1>Design &amp; code</h1>
+  </header>
+  <div class="content">
+    {% assign sorted_projects = site.projects | sort: 'date' | reverse %}
+    {% for project in sorted_projects %}
+      <article class="{{ project.slug }}">
+        <a href="#"><span>{{ project.title }}</span></a>
+      </article>
+    {% endfor %}
+  </div>  
 </section>
 

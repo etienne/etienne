@@ -1,18 +1,8 @@
 // Typography
 
-@mixin small-size {
-  font-size: 12px;
-  line-height: 18px;
-
-  @include tablet {
-    font-size: 14px;
-    line-height: 21px;
-  }
-}
-
 @mixin normal-size {
   font-size: 14px;
-  line-height: 21px;
+  line-height: 19px;
 
   @include tablet {
     font-size: 20px;
@@ -21,8 +11,8 @@
 }
 
 @mixin medium-size {
-  font-size: 22px;
-  line-height: 31px;
+  font-size: 20px;
+  line-height: 29px;
 
   @include tablet {
     font-size: 30px;
@@ -41,6 +31,17 @@
 }
 
 // Layout
+
+@mixin clearfix {
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
 
 @mixin no-bullets {
   list-style: none;
