@@ -3,7 +3,7 @@
 }
 
 body {
-  @include normal-size;
+  @include normal-text;
   background-color: $background-color;
   font-family: "Questa Sans";
   color: $text-color;
@@ -21,11 +21,15 @@ h1, h2 {
 }
 
 h1 {
-  @include normal-size;
+  @include normal-text;
   margin-bottom: 4px;
 }
 
 a {
   color: $text-color;
   text-decoration: none;
+}
+
+address {
+  font-style: normal;
 }
