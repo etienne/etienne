@@ -5,4 +5,6 @@
   {% assign url = "/en" %}
   {% assign name = "Projects" %}
 {% endif %}
-{% include menu/item.html name=name url=url %}
+<a href="{{ url }}"{% if page.url contains "projects" or page.url contains "projets" %} class="current"{% endif %}>
+  {{ name }}
+</a>
