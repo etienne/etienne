@@ -1,11 +1,11 @@
 <header id="sisyphe">
-  <h1><a href="/">Étienne Després</a></h1>
+  <h1><a href="{% if page.language == 'fr' %}/{% else %}/en{% endif %}">Étienne Després</a></h1>
   <nav>
     <ul>
-      <li><a href="#" class="current">Projets</a></li>
-      <li><a href="#">À propos</a></li>
-      <li><a href="#">Contact</a></li>
-      <li><a href="#">En<span class="expanded-word">glish</span></a></li>
+      <li>{% include menu/projects.html %}</li>
+      <li>{% include menu/about.html %}</li>
+      <li>{% include menu/contact.html %}</li>
+      <li>{% include menu/language.html %}</li>
     </ul>  
   </nav>
 </header>

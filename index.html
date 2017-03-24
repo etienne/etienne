@@ -1,4 +1,6 @@
 ---
+title: Projets
+language: fr
 layout: default
 ---
 
@@ -6,17 +8,4 @@ layout: default
   <p>Salut. C’est pas vrai que je suis cool, mais je fais du design, de la vidéo, de la 3D, plein d’affaires.</p>
 </section>
 
-<section class="projects video">
-  <header>
-    <h1>Design &amp; code</h1>
-  </header>
-  <div class="content">
-    {% assign sorted_projects = site.projects | sort: 'date' | reverse %}
-    {% for project in sorted_projects %}
-      <article class="{{ project.slug }}">
-        <a href="{{ project.url }}"><span>{{ project.title }}</span></a>
-      </article>
-    {% endfor %}
-  </div>  
-</section>
-
+{% include projects.html %}

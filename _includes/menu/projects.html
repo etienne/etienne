@@ -1,0 +1,8 @@
+{% if page.language == 'fr' %}
+  {% assign url = "/" %}
+  {% assign name = "Projets" %}
+{% else %}
+  {% assign url = "/en" %}
+  {% assign name = "Projects" %}
+{% endif %}
+{% include menu/item.html name=name url=url %}

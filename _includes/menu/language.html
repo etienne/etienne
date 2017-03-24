@@ -1,0 +1,8 @@
+{% if page.language == 'fr' %}
+  {% assign url = page.url | prepend: "/en" | replace: 'a-propos', 'about' | replace: 'projets', 'projects' %}
+  {% assign name = "English" %}
+{% else %}
+  {% assign url = page.url | remove: "/en" | replace: 'about', 'a-propos' | replace: 'projects', 'projets' %}
+  {% assign name = "Français" %}
+{% endif %}
+<a href="{{ url }}">{{ name | slice: 0, 2 }}<span class="expanded-word">{{ name | slice: 2, 99 }}</span></a>
