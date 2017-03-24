@@ -5,7 +5,11 @@
       <a href="tel:+1-514-886-5430">514 886 5430</a>
     </address>
     <p>
-      C’est vraiment gentil d’être descendu jusqu’ici, mais je n’ai rien à vous offrir sauf un lien pour <a href="#sisyphe">retourner en haut</a>.
+      {% if page.language == "fr" %}
+        C’est vraiment gentil d’être descendu jusqu’ici, mais je n’ai rien à vous offrir sauf un lien pour <a href="#sisyphe">retourner en haut</a>.
+      {% else %}
+        Hey, it’s really nice of you to have come this far down, but I have nothing to offer except a link to <a href="#sisyphe">scroll back up</a>.
+      {% endif %}
     </p>
   </div>
 </footer>
