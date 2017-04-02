@@ -1,0 +1,32 @@
+body.apollo-11 {
+  background-color: #042431;
+  
+  & > article {
+    padding-bottom: 50%;
+    background-image: url(../images/apollo-11/screenshot.png), url(../images/apollo-11/stars.png);
+    background-repeat: no-repeat, repeat;
+    background-size: contain, 100%;
+    background-position: 50% 100%, 0 0;
+  }
+  
+  section.intro {
+    img {
+      display: block;
+      margin: 0.6em auto 1em;
+      width: 6em;
+      
+      @include tablet {
+        margin: 1em auto;
+      }
+
+      @include desktop {
+        position: absolute;
+        margin-left: 2em;
+      }
+
+      @include desktop-large {
+        width: 7em;
+      }
+    }
+  }
+}

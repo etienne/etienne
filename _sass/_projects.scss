@@ -60,14 +60,6 @@ section.projects {
       padding-bottom: 14.0625%;
     }
     
-    &.apollo-11 {
-      background-image: url(../images/apollo-11.png);
-    }
-
-    &.espaces-temps {
-      background-image: url(../images/espaces-temps.png);
-    }
-    
     a {
       position: absolute;
       width: 100%;
@@ -93,6 +85,12 @@ section.projects {
       
       @include tablet {
         @include medium-text;
+      }
+    }
+    
+    @each $project in $projects {
+      &.#{$project} {
+        background-image: url(../images/#{$project}/thumbnail.png);
       }
     }
   }
