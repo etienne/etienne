@@ -2,6 +2,7 @@ title: Étienne Després
 author: Étienne Després
 description: "Design, programmation, 3D, illustration et autres patentes."
 permalink: /:title
+host: 0.0.0.0
 
 collections:
   projects-en:
