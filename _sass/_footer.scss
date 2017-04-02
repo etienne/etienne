@@ -1,24 +1,20 @@
 body > footer {
-  & > div {
+  address {
     @include container;
     @include clearfix;
-    padding: 4em 0;
-
-    @include tablet {
-      padding: 6em 0;
-    }
+    padding: 6em 0;
 
     @include desktop {
       padding: 8em 0 10em;
     }
-  }
-  
-  address {
-    width: 50%;
-    float: left;
+    
+    & > div {
+      width: 50%;
+      float: left;
+    }
     
     a {
-      border-bottom: 2px solid transparent;
+      border-bottom: 2px solid rgba(white, 0.3);
       transition: border-color $transition-speed;
 
       &:hover {
@@ -28,27 +24,7 @@ body > footer {
     
     @include desktop {
       margin-left: 50%;
-      width: 25%;
-    }
-  }
-  
-  p {
-    @include small-text;
-    opacity: 0.6;
-    width: 50%;
-    margin: 0.15em 0;
-    float: left;
-
-    @include tablet {
-      margin: 0.25em 0;
-    }
-    
-    @include desktop {
-      width: 25%;
-    }
-
-    a {
-      border-bottom: 1px solid;
+      width: 50%;
     }
   }
 }
