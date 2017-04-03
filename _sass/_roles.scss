@@ -1,0 +1,28 @@
+section.roles {
+  margin-top: 0.85em;
+  
+  @include tablet {
+    width: 46%;
+    float: left;
+  }
+
+  ul {
+    @include no-bullets;
+    margin-left: 2px;
+    margin-top: -2px;
+    margin-right: -2px;
+
+    li a {
+      float: left;
+      border: 2px solid;
+      padding: 0.9em 1.3em 1em;
+      margin-left: -2px;
+      
+      &:hover {
+        color: $background-color;
+        background-color: $text-color;
+        border-color: $text-color;
+      }
+    }
+  }
+}

@@ -1,18 +1,18 @@
 // Typography
 
 @mixin small-text {
-  font-size: 12px;
-  line-height: 17px;
+  font-size: 9px;
+  line-height: 15px;
 
   @include tablet {
-    font-size: 16px;
-    line-height: 23px;
+    font-size: 13px;
+    line-height: 19px;
   }
 }
 
 @mixin normal-text {
-  font-size: 14px;
-  line-height: 19px;
+  font-size: 12px;
+  line-height: 17px;
 
   @include tablet {
     font-size: 20px;

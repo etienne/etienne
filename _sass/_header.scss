@@ -1,4 +1,4 @@
-body > header {
+header#menu {
   @include container;
   @include clearfix;
   position: absolute;
@@ -21,6 +21,15 @@ body > header {
     @include tablet {
       width: 50%;
     }
+    
+    body:not([class]) & {
+      @include desktop {
+        @include medium-text;
+        position: relative;
+        top: 4.65em;
+      }
+    }
+    
   }
   
   nav {

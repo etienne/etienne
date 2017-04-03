@@ -3,27 +3,6 @@ body > article {
     @include container;
     @include clearfix;
     
-    ul.roles {
-      @include no-bullets;
-      margin-left: 2px;
-      margin-right: -2px;
-      margin-top: 2px;
-      
-      @include tablet {
-        width: 46%;
-        margin-top: 0.6em;
-        float: left;
-      }
-
-      li a {
-        float: left;
-        border: 2px solid;
-        padding: 0.9em 1.3em 1em;
-        margin-left: -2px;
-        margin-top: -2px;
-      }
-    }
-    
     div.description {
       @include medium-text;
       margin-bottom: 1em;
