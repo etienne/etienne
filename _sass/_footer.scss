@@ -1,16 +1,48 @@
 body > footer {
+  background-color: $background-color;
+  
   address {
     @include container;
     @include clearfix;
-    padding: 6em 0;
+    padding: 5em 0 4em;
 
     @include desktop {
       padding: 8em 0 10em;
     }
     
+    span.earth {
+      position: absolute;
+      margin-left: 5%;
+      width: 30%;
+      
+      @include desktop {
+        margin-left: 4em;
+        max-width: 16em;
+      }
+      
+      img.earth {
+        width: 100%;
+      }
+      
+      img.hand {
+        position: absolute;
+        width: $hand-width / $earth-width * 100%;
+        top: -2%;
+        left: $hand-position / $earth-width * 100%;
+        animation: hand 2.5s infinite ease-in-out;
+      }
+    }
+    
+    h1 {
+      @include medium-text;
+      margin-left: 50%;
+      margin-bottom: 0.35em;
+    }
+    
     & > div {
       width: 50%;
-      float: left;
+      margin-left: 50%;
+      margin-bottom: 0.8em;
     }
     
     a {
@@ -20,11 +52,6 @@ body > footer {
       &:hover {
         border-color: $text-color;
       }
-    }
-    
-    @include desktop {
-      margin-left: 50%;
-      width: 50%;
     }
   }
 }

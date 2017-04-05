@@ -5,3 +5,14 @@
   60%  { opacity: 0; }
   100% { opacity: 0; }
 }
+
+@keyframes hand {
+  0%, 100% { 
+    top: -2%;
+    left: $hand-position / $earth-width * 100%;
+  }
+  50%  { 
+    top: -2% - $hand-wiggle;
+    left: $hand-position / $earth-width * 100% + $hand-wiggle;
+  }
+}
