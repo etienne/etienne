@@ -5,6 +5,6 @@
   {% assign url = "/en" %}
   {% assign name = "Projects" %}
 {% endif %}
-<a href="{{ url }}"{% if page.url contains "projects" or page.url contains "projets" %} class="current"{% endif %}>
+<a href="{{ url }}"{% if page.url contains "projects" or page.url contains "projets" or page.url == '/' %} class="current"{% endif %}>
   {{ name }}
 </a>
