@@ -18,6 +18,12 @@ header#menu {
   h1 {
     float: left;
     
+    &:after {
+      content: '_';
+      color: $primary-color;
+      animation: pulse 1.4s infinite;
+    }
+    
     @include tablet {
       width: 50%;
     }
