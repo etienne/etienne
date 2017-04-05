@@ -21,7 +21,7 @@ header#menu {
     &:after {
       content: '_';
       color: $primary-color;
-      animation: pulse 1.4s infinite;
+      animation: blink 1.4s infinite;
     }
     
     @include tablet {
