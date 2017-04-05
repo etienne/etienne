@@ -31,8 +31,8 @@
 }
 
 @mixin big-text {
-  font-size: 30px;
-  line-height: 40px;
+  font-size: 28px;
+  line-height: 38px;
 
   @include tablet {
     font-size: 48px;
