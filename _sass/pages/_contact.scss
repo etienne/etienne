@@ -1,0 +1,66 @@
+body.contact {
+  section.intro {
+    p {
+      @include tablet {
+        padding-left: 50%;
+      }
+    }
+  }
+  
+  address {
+    @include container;
+    position: relative;
+    padding-top: 1em;
+
+    span.earth {
+      position: absolute;
+      margin-left: 5%;
+      width: 30%;
+  
+      @include tablet {
+        top: -3.5em;
+      }
+      
+      @include desktop {
+        margin-left: 4em;
+        max-width: 16em;
+      }
+      
+      img.earth {
+        width: 100%;
+      }
+  
+      img.hand {
+        position: absolute;
+        width: $hand-width / $earth-width * 100%;
+        top: -2%;
+        left: $hand-position / $earth-width * 100%;
+        animation: hand 2.5s infinite ease-in-out;
+      }
+      
+      p {
+        @include small-text;
+        text-align: center;
+        opacity: 0.5;
+        
+        @include tablet {
+          margin-top: 2em;
+        }
+      }
+    }
+
+    & > div {
+      width: 50%;
+      margin-left: 50%;
+      margin-bottom: 0.8em;
+    }
+    
+    a.email {
+      @extend %button;
+    }
+  }
+  
+  footer {
+    display: none;
+  }
+}

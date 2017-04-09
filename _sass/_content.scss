@@ -1,0 +1,19 @@
+.content {
+  a {
+    border-bottom: 1px solid rgba(white, 0.3);
+    transition: border-color $transition-speed;
+
+    &:hover {
+      border-color: $text-color;
+    }
+    
+    &.primary {
+      color: $primary-color;
+      border-bottom-color: rgba($primary-color, 0.5);
+      
+      &:hover {
+        border-bottom-color: $primary-color;
+      }
+    }
+  }
+}

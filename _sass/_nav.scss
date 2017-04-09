@@ -1,0 +1,61 @@
+nav {
+  float: right;
+
+  @include tablet {
+    float: left;
+    width: 50%;
+  }
+
+  ul {
+    @include no-bullets;
+    
+    li {
+      float: left;
+      margin-left: 18px;
+      
+      @include tablet {
+        margin-left: 22px;
+      }
+      
+      @include desktop {
+        margin-left: 32px;
+      }
+      
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+    
+    a {
+      display: block;
+      color: $primary-color;
+      border-bottom: 1px solid;
+      transition: border-color $transition-speed;
+      
+      @include tablet {
+        color: $text-color;
+        border-bottom: 2px solid transparent;
+      }
+
+      &:hover {
+        border-bottom: 2px solid $text-color;
+      }
+      
+      &.current {
+        display: none;
+        color: $primary-color;
+        border-bottom: 2px solid;
+        
+        @include tablet {
+          display: block;
+        }
+      }
+      
+      span.expanded-word {
+        @include mobile-only {
+          display: none;
+        }
+      }
+    }
+  }
+}

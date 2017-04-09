@@ -6,12 +6,16 @@
 @import 'mixins';
 @import 'animations';
 @import 'base';
+@import 'content';
 @import 'footer';
 @import 'header';
 @import 'layout';
 @import 'projects';
 @import 'project';
+@import 'nav';
 @import 'roles';
+
+@import 'pages/contact';
 
 @import 'projects/apollo-11';
 @import 'projects/espaces-temps';

@@ -1,11 +1,4 @@
 <header id="menu">
   <h1><a href="{% if page.language == 'fr' %}/{% else %}/en{% endif %}">Étienne Després</a></h1>
-  <nav>
-    <ul>
-      <li>{% include menu/projects.html %}</li>
-      <li>{% include menu/about.html %}</li>
-      <li>{% include menu/contact.html %}</li>
-      <li>{% include menu/language.html %}</li>
-    </ul>  
-  </nav>
+  {% include menu/nav.html %}
 </header>

@@ -1,21 +1,5 @@
 <footer>
-  <address id="contact">
-    <span class="earth">
-      <img class="earth" src="/images/earth.png" alt="La planète Terre">
-      <img class="hand" src="/images/hand.png" alt="Une main qui pointe Montréal sur la Terre">
-    </span>
-    <h1>Je suis juste ici.</h1>
-    <div>
-      {% if page.language == "fr" %}
-        <a href="mailto:allo@etienne.cool">allo@etienne.cool</a><br>
-      {% else %}
-        <a href="mailto:hello@etienne.cool">hello@etienne.cool</a><br>
-      {% endif %}
-      <a href="tel:+1-514-886-5430">514 886 5430</a>
-    </div>
-    <div>
-      <a href="https://www.google.ca/maps/place/Temps+libre+Mile-End/@45.5283051,-73.5980458,15z/data=!4m5!3m4!1s0x0:0xa4919ab35b980a2b!8m2!3d45.5283051!4d-73.5980458">5605 de Gaspé</a>, bureau&nbsp;106<br>
-      Montréal (Québec)&nbsp; H2T&nbsp;2A4
-    </div>
-  </address>
+  <section>
+    {% include menu/nav.html %}
+  </section>
 </footer>
