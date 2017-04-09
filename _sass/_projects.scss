@@ -38,7 +38,8 @@ section.projects {
     }
   }
   
-  div.content {
+  ul {
+    @include no-bullets;
     clear: both;
   }
   

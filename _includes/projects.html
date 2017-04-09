@@ -2,7 +2,7 @@
   <header>
     <h1>Design &amp; code</h1>
   </header>
-  <div class="content">
+  <ul>
     {% if page.language == "fr" %}
       {% assign projects = site.projects-fr %}
     {% else %}
@@ -10,9 +10,9 @@
     {% endif %}
     {% assign sorted_projects = projects | sort: 'date' | reverse %}
     {% for project in sorted_projects %}
-      <article class="{{ project.slug }}">
+      <li><article class="{{ project.slug }}">
         <a href="{{ project.url }}"><span>{{ project.title }}</span></a>
-      </article>
+      </article></li>
     {% endfor %}
   </div>  
 </section>

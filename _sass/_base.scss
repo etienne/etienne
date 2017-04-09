@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html {
+	-webkit-font-smoothing: antialiased;
+}
+
 body {
   @include normal-text;
   background-color: $background-color;
