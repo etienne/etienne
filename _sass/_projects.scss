@@ -65,7 +65,7 @@ section.projects {
       position: absolute;
       width: 100%;
       height: 100%;
-      background-color: rgba($background-color, 0.2);
+      background-color: rgba($background-color, 0.15);
       transition: background-color $transition-speed;
       
       &:hover {

@@ -8,6 +8,10 @@ body > footer {
     @include tablet {
       padding: 6em 0 7em;
     }
+
+    @include desktop {
+      padding: 8em 0 9em;
+    }
     
     nav {
       float: right;
