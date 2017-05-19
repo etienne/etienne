@@ -9,14 +9,14 @@ html {
 body {
   @include normal-text;
   background-color: $background-color;
-  font-family: "Questa Sans";
+  font-family: "Cogito";
   color: $text-color;
   margin: 0;
   padding: 0;
 }
 
 h1, h2 {
-  font-weight: normal;
+  font-weight: bold;
   margin: 0;
 }
 

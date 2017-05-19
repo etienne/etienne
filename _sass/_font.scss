@@ -1,11 +1,36 @@
 @font-face {
-    font-family: 'Questa Sans';
-    src: url('../fonts/questa_sans_regular-webfont.eot');
-    src: url('../fonts/questa_sans_regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/questa_sans_regular-webfont.woff2') format('woff2'),
-         url('../fonts/questa_sans_regular-webfont.woff') format('woff'),
-         url('../fonts/questa_sans_regular-webfont.ttf') format('truetype'),
-         url('../fonts/questa_sans_regular-webfont.svg#questa_sansregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Cogito';
+  src: url('../fonts/CogitoWeb-Regular.eot');
+  src: url('../fonts/CogitoWeb-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/CogitoWeb-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
+
+@font-face {
+  font-family: 'Cogito';
+  src: url('../fonts/CogitoWeb-Italic.eot');
+  src: url('../fonts/CogitoWeb-Italic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/CogitoWeb-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Cogito';
+  src: url('../fonts/CogitoWeb-Bold.eot');
+  src: url('../fonts/CogitoWeb-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/CogitoWeb-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cogito';
+  src: url('../fonts/CogitoWeb-BoldItalic.eot');
+  src: url('../fonts/CogitoWeb-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/CogitoWeb-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
