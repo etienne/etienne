@@ -11,9 +11,13 @@ body > article {
         width: 50%;
         float: right;
       }
+      
+      p {
+        margin: 0 0 0.5em;
+      }
 
       a {
-        border-bottom: 2px solid;
+        border-bottom: 1px solid;
         
         &:hover {
           color: $primary-color;

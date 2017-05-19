@@ -3,11 +3,11 @@ section.projects {
   margin-top: 2em;
 
   @include tablet {
-    margin-top: 4em;
+    margin-top: 5.5em;
   }
 
   @include desktop {
-    margin-top: 6em;
+    margin-top: 8em;
   }
 
   header {
@@ -33,7 +33,7 @@ section.projects {
       
       @include desktop {
         @include medium-text;
-        margin-top: -2.52em;
+        margin-top: -2.45em;
       }
     }
   }
@@ -49,10 +49,11 @@ section.projects {
     padding-bottom: 28.125%;
     position: relative;
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: 50% 50%;
     
     @include tablet {
-      width: 33.33%;
+      width: 1/3 * 100%;
       padding-bottom: 18.7498125%;
     }
     
@@ -65,11 +66,15 @@ section.projects {
       position: absolute;
       width: 100%;
       height: 100%;
-      background-color: rgba($background-color, 0.15);
+      background-color: rgba($background-color, 0.12);
       transition: background-color $transition-speed;
       
       &:hover {
-        background-color: rgba($background-color, 0.3);
+        background-color: transparent;
+        
+        span {
+          border-bottom: 2px solid white;
+        }
       }
       
       span {
@@ -77,6 +82,9 @@ section.projects {
         display: block;
         bottom: 0;
         margin: 4% 8%;
+        font-weight: bold;
+        border-bottom: 2px solid transparent;
+        transition: border $transition-speed;
 
         @include tablet {
           @include normal-text;

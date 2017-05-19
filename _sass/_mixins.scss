@@ -11,12 +11,12 @@
 }
 
 @mixin normal-text {
-  font-size: 14px;
-  line-height: 19px;
+  font-size: 12px;
+  line-height: 18px;
 
   @include tablet {
-    font-size: 20px;
-    line-height: 29px;
+    font-size: 16px;
+    line-height: 22px;
   }
 }
 
@@ -25,8 +25,8 @@
   line-height: 22px;
 
   @include tablet {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 26px;
+    line-height: 36px;
   }
 }
 
@@ -35,8 +35,8 @@
   line-height: 38px;
 
   @include tablet {
-    font-size: 48px;
-    line-height: 60px;
+    font-size: 46px;
+    line-height: 58px;
   }
 }
 

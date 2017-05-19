@@ -8,21 +8,15 @@ header#menu {
   color: white;
   
   @include tablet {
-    padding-top: 1.8em;
+    padding-top: 2em;
   }
 
   @include desktop {
-    padding-top: 2.5em;
+    padding-top: 3em;
   }
 
   h1 {
     float: left;
-    
-    &:after {
-      content: '_';
-      color: $primary-color;
-      animation: blink 1.4s infinite;
-    }
     
     @include tablet {
       width: 50%;
@@ -32,8 +26,16 @@ header#menu {
       @include desktop {
         @include medium-text;
         position: relative;
-        top: 4.65em;
+        top: 6.2em;
       }
+    }
+    
+    body[class] &:before {
+      position: relative;
+      top: 0.05em;
+      content: '←';
+      font-size: 125%;
+      margin-right: 0.5em;
     }
   }
 }

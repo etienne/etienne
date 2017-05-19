@@ -1,16 +1,39 @@
 body > footer {
-  background-color: $background-color;
-  
   section {
     @include container;
-    padding: 4em 0 5em;
+    @include clearfix;
+    padding: 4em 0;
     
     @include tablet {
-      padding: 6em 0 7em;
+      padding: 8em 0;
     }
 
     @include desktop {
-      padding: 8em 0 9em;
+      padding: 10em 0;
+    }
+    
+    address {
+      @include tablet {
+        width: 50%;
+        float: right;
+      }
+      
+      p {
+        @include tablet {
+          width: 50%;
+          float: left;
+        }
+      }
+      
+      a {
+        font-weight: bold;
+        border-bottom: 2px solid transparent;
+        transition: border $transition-speed;
+        
+        &:hover {
+          border-bottom: 2px solid;
+        }
+      }
     }
     
     nav {
