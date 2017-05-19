@@ -10,9 +10,10 @@ body.apollo-11 {
   }
   
   section.intro {
-    img {
+    img.eagle {
       display: block;
-      margin: 0.6em auto 1em;
+      clear: both;
+      margin: 1em auto;
       width: 6em;
       
       @include tablet {
