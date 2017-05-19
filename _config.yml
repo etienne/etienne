@@ -11,3 +11,18 @@ collections:
   projects-fr:
     output: true
     permalink: /projets/:title
+
+types: [video, design]
+
+i18n:
+  fr:
+    video: "Vidéo & 3D"
+    design: "Design"
+    contact: "Contact"
+    language: "English"
+  en:
+    video: "Video & 3D"
+    design: "Design"
+    contact: "Contact"
+    language: "Français"
+    

@@ -1,0 +1,21 @@
+{% if page.language == 'fr' %}
+  {% assign language_url = page.url | prepend: "/en" | replace: 'projets', 'projects' %}
+  {% assign url_prefix = '/' %}
+{% else %}
+  {% assign language_url = page.url | remove: "/en" | replace: 'projects', 'projets' %}
+  {% assign url_prefix = '/en/' %}
+{% endif %}
+{% assign language_label = site.i18n[page.language].language %}
+
+<nav>
+  <ul>
+    <li><a href="{{ url_prefix }}#video" data-scroll>{{ site.i18n[page.language]video }}</a></li>
+    <li><a href="{{ url_prefix }}#design" data-scroll>{{ site.i18n[page.language]design }}</a></li>
+    <li><a href="#contact" data-scroll>{{ site.i18n[page.language]contact }}</a></li>
+    <li>
+      <a href="{{ language_url }}">
+        {{ language_label | slice: 0, 2 }}<span class="expanded-word">{{ language_label | slice: 2, 99 }}</span>
+      </a>
+    </li>
+  </ul>  
+</nav>
