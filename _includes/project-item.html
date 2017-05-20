@@ -1,0 +1,4 @@
+<article class="project-item {{ include.project.slug }} {{ page.language }} {% if page.slug == include.project.slug %}current{% endif %}">
+  <img src="/images/{{ include.project.slug }}/thumbnail.png" alt="Aperçu du projet">
+  <a href="{{ include.project.url }}"><span>{{ include.project.title }}</span></a>
+</article>
