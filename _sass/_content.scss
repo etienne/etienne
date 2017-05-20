@@ -1,0 +1,51 @@
+article.content {
+  @include clearfix;
+  padding-top: 0.3em;
+
+  @include tablet {
+    padding-top: 0.5em;
+  }
+
+  @include desktop {
+    padding-top: 3em;
+  }
+  
+  div.text {
+    @include tablet {
+      padding-left: 50%;
+    }
+    
+    h1 {
+      @include big-text;
+      margin: 0;
+    }
+  
+    p.intro {
+      @include big-text;
+      margin: 0 0 0.5em;
+      
+      a {
+        border: none;
+        box-shadow: inset 0 -3px rgba(white, 0.2);
+        transition: box-shadow $transition-speed;
+    
+        &:hover {
+          box-shadow: inset 0 -3px white;
+        }
+      }
+    }
+  
+    p {
+      @include medium-text;
+    }
+    
+    a {
+      border-bottom: 2px solid rgba(white, 0.2);
+      transition: border $transition-speed;
+      
+      &:hover {
+        border-bottom-color: white;
+      }
+    }
+  }
+}

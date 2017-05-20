@@ -1,5 +1,6 @@
 section.projects {
   @include clearfix;
+  @extend section.wide;
   margin-top: 2em;
 
   @include tablet {

@@ -1,33 +1,18 @@
 body.apollo-11 {
-  background-color: #042431;
+  background: #042431 url(../images/apollo-11/stars.png) repeat-x;
   
   & > article {
-    padding-bottom: 50%;
-    background-image: url(../images/apollo-11/screenshot.png), url(../images/apollo-11/stars.png);
-    background-repeat: no-repeat, repeat;
+    background: url(../images/apollo-11/screenshot.png) no-repeat 50% 100%;
     background-size: contain, 100%;
-    background-position: 50% 100%, 0 0;
-  }
-  
-  section.intro {
+    padding-bottom: 50%;
+    
     img.eagle {
       display: block;
+      float: left;
       clear: both;
-      margin: 1em auto;
-      width: 6em;
-      
-      @include tablet {
-        margin: 1em auto;
-      }
-
-      @include desktop {
-        position: absolute;
-        margin-left: 2em;
-      }
-
-      @include desktop-large {
-        width: 7em;
-      }
+      width: 30%;
+      margin-top: 2em;
+      margin-left: 9%;
     }
   }
 }

@@ -1,39 +1,13 @@
-section.intro {
-  @include container;
-  @include big-text;
-  padding-top: 2em;
-  
-  @include tablet {
-    padding-top: 3em;
-  }
-
-  @include desktop {
-    padding-top: 4.2em;
-  }
-  
-  p {
-    margin: 0em 0 0.6em;
-    
-    @include desktop {
-      padding-left: 50%;
-    }
-  }
-  
-  a {
-    box-shadow: inset 0 -3px rgba(white, 0.2);
-    transition: box-shadow $transition-speed;
-    
-    &:hover {
-      box-shadow: inset 0 -3px white;
-    }
-  }
-}
-
 section.wide {
-  margin: 2em 0;
+  width: 100%;
+  max-width: 100%;
   
   img {
     display: block;
     width: 100%;
   }
+}
+
+section.padded {
+  margin: 2em 0;
 }

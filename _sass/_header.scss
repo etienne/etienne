@@ -1,18 +1,15 @@
 header#menu {
   @include container;
   @include clearfix;
-  position: absolute;
-  padding-top: 0.75em;
-  left: 0;
-  right: 0;
+  padding: 0.75em 0;
   color: white;
   
   @include tablet {
-    padding-top: 2em;
+    padding: 2em 0;
   }
 
   @include desktop {
-    padding-top: 3em;
+    padding: 3em 0;
   }
 
   h1 {
@@ -23,6 +20,10 @@ header#menu {
     }
     
     body:not([class]) & {
+      a {
+        border-bottom: none;
+      }
+      
       @include desktop {
         @include medium-text;
         position: relative;

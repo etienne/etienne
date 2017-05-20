@@ -1,7 +1,5 @@
 body > footer {
   section {
-    @include container;
-    @include clearfix;
     padding: 4em 0;
     
     @include tablet {
@@ -27,12 +25,6 @@ body > footer {
       
       a {
         font-weight: bold;
-        border-bottom: 2px solid transparent;
-        transition: border $transition-speed;
-        
-        &:hover {
-          border-bottom: 2px solid;
-        }
       }
     }
     

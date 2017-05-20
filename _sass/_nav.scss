@@ -1,4 +1,4 @@
-nav {
+header nav {
   float: right;
 
   @include tablet {
@@ -29,18 +29,6 @@ nav {
     a {
       font-weight: bold;
       display: block;
-      color: $primary-color;
-      border-bottom: 1px solid;
-      transition: border-color $transition-speed;
-      
-      @include tablet {
-        color: $text-color;
-        border-bottom: 2px solid transparent;
-      }
-
-      &:hover {
-        border-bottom: 2px solid $text-color;
-      }
       
       span.expanded-word {
         @include mobile-only {
