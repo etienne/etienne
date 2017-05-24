@@ -3,7 +3,7 @@ body > footer {
     padding: 4em 0;
     
     @include tablet {
-      padding: 8em 0;
+      padding: 6em 0;
     }
 
     @include desktop {
@@ -11,7 +11,7 @@ body > footer {
     }
     
     address {
-      @include tablet {
+      @include desktop {
         width: 50%;
         float: right;
       }
@@ -26,10 +26,6 @@ body > footer {
       a {
         font-weight: bold;
       }
-    }
-    
-    nav {
-      float: right;
     }
   }
 }

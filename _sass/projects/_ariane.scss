@@ -1,4 +1,21 @@
 body.ariane {
   background: #051017 url(../images/ariane/still.png) no-repeat;
-  background-size: contain;
+  background-size: 220%;
+  background-position: 40% 0;
+
+  @include tablet {
+    background-size: 120%;
+  }
+  
+  @include desktop {
+    background-size: contain;
+  }
+  
+  section:first-child {
+    padding-bottom: 70%;
+
+    @include tablet {
+      padding-bottom: 39%;
+    }
+  }
 }

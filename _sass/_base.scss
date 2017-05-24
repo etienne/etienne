@@ -8,8 +8,8 @@ html {
 
 body {
   @include normal-text;
+  font-family: "Cogito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Verdana, sans-serif;
   background-color: $background-color;
-  font-family: "Cogito";
   color: $text-color;
   margin: 0;
   padding: 0;
@@ -28,6 +28,10 @@ h1, h2 {
 h1 {
   @include normal-text;
   margin-bottom: 4px;
+}
+
+p {
+  margin: 0.8em 0;
 }
 
 a {

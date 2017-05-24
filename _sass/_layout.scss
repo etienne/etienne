@@ -4,6 +4,15 @@ section.wide {
 }
 
 section.padded {
-  margin-top: 2em;
-  margin-bottom: 2em;
+  margin-top: 1em;
+  padding-bottom: 1em;
+
+  @include tablet {
+    margin-top: 2em;
+    padding-bottom: 2em;
+  }
+}
+
+section.screenshot {
+  overflow: hidden;
 }

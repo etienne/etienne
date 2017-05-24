@@ -1,7 +1,7 @@
 header#menu {
   @include container;
   @include clearfix;
-  padding: 0.75em 0;
+  padding: 1em 0;
   color: white;
   
   @include tablet {
@@ -17,6 +17,10 @@ header#menu {
     
     @include tablet {
       width: 50%;
+    }
+    
+    a {
+      display: inline-block;
     }
     
     body:not([class]) & {

@@ -1,14 +1,14 @@
 section.projects {
   @include clearfix;
   @extend section.wide;
-  margin-top: 2em;
+  padding-top: 2em;
 
   @include tablet {
-    margin-top: 5.5em;
+    padding-top: 5.5em;
   }
 
   @include desktop {
-    margin-top: 8em;
+    padding-top: 8em;
   }
 
   header {
@@ -27,7 +27,7 @@ section.projects {
         position: absolute;
         z-index: 1;
         float: left;
-        margin: -2.6em 0 0;
+        margin: -2.5em 0 0;
         padding: 1.45em 1.7em;
         border: 2px solid white;
       }

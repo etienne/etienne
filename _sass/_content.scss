@@ -1,9 +1,9 @@
 article.content {
   @include clearfix;
-  padding-top: 0.3em;
+  padding-top: 1.5em;
 
   @include tablet {
-    padding-top: 0.5em;
+    padding-top: 2em;
   }
 
   @include desktop {
@@ -16,7 +16,7 @@ article.content {
   }
   
   div.text {
-    @include tablet {
+    @include desktop {
       padding-left: 50%;
     }
     
@@ -42,28 +42,31 @@ article.content {
   
     p {
       @include medium-text;
+      
+      a {
+        border-bottom: 2px solid rgba(white, 0.2);
+        transition: border $transition-speed;
+      
+        &:hover {
+          border-bottom-color: white;
+        }
+      }
     }
     
-    a {
-      border-bottom: 2px solid rgba(white, 0.2);
-      transition: border $transition-speed;
+    a.play {
+      font-weight: bold;
+      display: inline-block;
+      border: 2px solid white;
+      padding: 1.125em 1.5em;
       
-      &:hover {
-        border-bottom-color: white;
+      @include tablet {
+        padding: 1.5em 2em;
       }
       
-      &.play {
-        font-weight: bold;
-        display: inline-block;
-        border: 2px solid white;
-        padding: 1.5em 2em;
-        margin-top: 3em;
-        
-        &:before {
-          content: "▷";
-          font-size: 140%;
-          margin-right: 1.1em;
-        }
+      &:before {
+        content: "▷";
+        font-size: 140%;
+        margin-right: 1.1em;
       }
     }
     
@@ -77,12 +80,19 @@ article.content {
       top: 50%;
       left: 50%;
       content: "▷";
-      font-size: 2em;
-      width: 4em;
-      line-height: 2.6em;
+      font-size: 1.5em;
       text-align: center;
       border: 2px solid;
+      width: 4em;
+      line-height: 2.6em;
       margin: -1.3em 0 0 -2em;
+      
+      @include tablet {
+        font-size: 2em;
+        width: 3em;
+        line-height: 2.4em;
+        margin: -1.2em 0 0 -1.5em;
+      }
     }
     
     img {
