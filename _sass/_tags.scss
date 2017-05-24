@@ -1,0 +1,21 @@
+ul.tags {
+  @include no-bullets;
+  margin-bottom: 2em;
+  
+  li {
+    display: inline;
+    
+    a {
+      display: inline-block;
+    }
+    
+    &:first-child:before {
+      content: '';
+    } 
+    
+    &:before {
+      content: ' / ';
+      color: rgba(white, 0.4);
+    }
+  }
+}
