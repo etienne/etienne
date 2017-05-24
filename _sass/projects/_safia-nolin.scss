@@ -1,3 +1,15 @@
 body.safia-nolin {
   background-color: #1c1f1d;
+  
+  section.screenshot {
+    img {
+      width: 200%;
+      margin-left: -50%;
+      
+      @include tablet {
+        width: 100%;
+        margin-left: 0;
+      }
+    }
+  }
 }
