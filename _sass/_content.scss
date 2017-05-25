@@ -1,13 +1,16 @@
 article.content {
   @include clearfix;
-  padding-top: 1.5em;
+  
+  & > section:first-child {
+    padding-top: 5em;
 
-  @include tablet {
-    padding-top: 2em;
-  }
+    @include tablet {
+      padding-top: 8em;
+    }
 
-  @include desktop {
-    padding-top: 3em;
+    @include desktop {
+      padding-top: 12em;
+    }
   }
   
   img {

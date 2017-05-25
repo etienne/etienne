@@ -1,6 +1,9 @@
 header#menu {
   @include container;
   @include clearfix;
+  position: absolute;
+  left: 0;
+  right: 0;
   padding: 1em 0;
   color: white;
   

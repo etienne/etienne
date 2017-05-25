@@ -16,3 +16,7 @@ section.padded {
 section.screenshot {
   overflow: hidden;
 }
+
+section.wrapper {
+  @extend section.wide;
+}

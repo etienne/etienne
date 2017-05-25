@@ -1,21 +1,26 @@
 body.ariane {
-  background: #051017 url(../images/ariane/still.png) no-repeat;
-  background-size: 220%;
-  background-position: 40% 0;
-
-  @include tablet {
-    background-size: 120%;
-  }
+  background-color: #051017;
   
-  @include desktop {
-    background-size: contain;
-  }
-  
-  section:first-child {
-    padding-bottom: 70%;
-
+  section.wrapper {
+    background: #051017 url(../images/ariane/still.png) no-repeat;
+    background-size: 220%;
+    background-position: 40% 0;
+    padding-bottom: 128%;
+    
     @include tablet {
-      padding-bottom: 39%;
+      background-size: 120%;
+      padding-bottom: 64%;
+    }
+  
+    @include desktop {
+      background-size: 100%;
+      padding-bottom: 53%;
+    }
+    
+    section {
+      position: absolute;
+      left: 0;
+      right: 0;
     }
   }
 }

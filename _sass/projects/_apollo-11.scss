@@ -6,6 +6,10 @@ body.apollo-11 {
     background-size: 150%;
   }
   
+  @include desktop {
+    background-size: 100%;
+  }
+  
   img.eagle {
     display: block;
     width: 55%;
