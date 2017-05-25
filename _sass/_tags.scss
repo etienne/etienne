@@ -1,5 +1,6 @@
 ul.tags {
   @include no-bullets;
+  padding-top: 0.5em;
   
   li {
     display: inline;

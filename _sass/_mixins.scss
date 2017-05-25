@@ -66,6 +66,18 @@
   margin: 0 auto;
 }
 
+@mixin section-margins {
+  margin-bottom: 2em;
+
+  @include tablet {
+    margin-bottom: 2.5em;
+  }
+
+  @include desktop {
+    margin-bottom: 3.5em;
+  }
+}
+
 @mixin breakpoint($min-width) {
   @media only screen and (min-width : $min-width) {
     @content

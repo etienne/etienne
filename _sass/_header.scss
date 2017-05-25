@@ -6,6 +6,7 @@ header#menu {
   right: 0;
   padding: 1em 0;
   color: white;
+  z-index: 2;
   
   @include tablet {
     padding: 2em 0;

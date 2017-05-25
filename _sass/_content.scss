@@ -1,7 +1,29 @@
 article.content {
   @include clearfix;
   
-  & > section:first-child {
+  section {
+    @include container;
+    @include clearfix;
+    @include section-margins;
+    
+    &.wide, &.wrapper {
+      width: 100%;
+      max-width: 100%;
+    }
+    
+    &.screenshot {
+      overflow: hidden;
+    }
+    
+    &.superimposed {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+  }
+  
+  & > section:first-child, section.superimposed {
     padding-top: 5em;
 
     @include tablet {
@@ -16,6 +38,10 @@ article.content {
   img {
     display: block;
     width: 100%;
+    
+    &.hero {
+      @include section-margins;
+    }
   }
   
   div.text {
@@ -28,23 +54,27 @@ article.content {
       margin: 0;
     }
   
-    p.intro {
-      @include big-text;
-      margin: 0 0 0.5em;
-      
-      a {
-        border: none;
-        box-shadow: inset 0 -3px rgba(white, 0.2);
-        transition: box-shadow $transition-speed;
-    
-        &:hover {
-          box-shadow: inset 0 -3px white;
-        }
-      }
-    }
-  
     p {
       @include medium-text;
+      margin: 0 0 0.75em;
+      
+      &:last-child {
+        margin-bottom: 0;
+      }
+      
+      &.intro {
+        @include big-text;
+    
+        a {
+          border: none;
+          box-shadow: inset 0 -3px rgba(white, 0.2);
+          transition: box-shadow $transition-speed;
+  
+          &:hover {
+            box-shadow: inset 0 -3px white;
+          }
+        }
+      }
       
       a {
         border-bottom: 2px solid rgba(white, 0.2);

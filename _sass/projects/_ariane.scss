@@ -1,26 +1,13 @@
 body.ariane {
   background-color: #051017;
-  
-  section.wrapper {
-    background: #051017 url(../images/ariane/still.png) no-repeat;
-    background-size: 220%;
-    background-position: 40% 0;
-    padding-bottom: 128%;
+
+  img.hero {
+    width: 230%;
+    margin-left: -55%;
     
     @include tablet {
-      background-size: 120%;
-      padding-bottom: 64%;
-    }
-  
-    @include desktop {
-      background-size: 100%;
-      padding-bottom: 53%;
-    }
-    
-    section {
-      position: absolute;
-      left: 0;
-      right: 0;
+      width: 100%;
+      margin-left: 0;
     }
   }
 }

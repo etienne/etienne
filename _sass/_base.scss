@@ -15,11 +15,6 @@ body {
   padding: 0;
 }
 
-section {
-  @include container;
-  @include clearfix;
-}
-
 h1, h2 {
   font-weight: bold;
   margin: 0;

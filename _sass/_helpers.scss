@@ -1,7 +1,5 @@
-.tablet-only {
-  display: none;
-  
-  @include tablet {
-    display: block;
+.hide-mobile {
+  @include mobile-only {
+    display: none;
   }
 }

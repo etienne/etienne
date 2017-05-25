@@ -1,14 +1,30 @@
 section.projects {
   @include clearfix;
-  @extend section.wide;
-  padding-top: 2em;
-
-  @include tablet {
-    padding-top: 5.5em;
+  
+  body:not([class]) & {
+    @include tablet {
+      padding-top: 2em;
+    }
   }
 
-  @include desktop {
-    padding-top: 8em;
+  body[class] & {
+    padding-top: 2em;
+
+    @include tablet {
+      padding-top: 4em;
+    }
+  }
+  
+  & + section.projects {
+    padding-top: 2em;
+
+    @include tablet {
+      padding-top: 5.5em;
+    }
+
+    @include desktop {
+      padding-top: 8em;
+    }
   }
 
   header {
