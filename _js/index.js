@@ -2,10 +2,11 @@ import Pjax from 'pjax';
 import smoothScroll from 'smooth-scroll';
 import Player from '@vimeo/player';
 
+// Pjax
+
 document.addEventListener("pjax:complete", function() {
   var slug = document.querySelector('article.content').dataset.bodyClass || '';
   document.body.className = slug;
-  
   var currentProject = document.querySelector('article.current');
   
   if (currentProject) {
@@ -19,7 +20,11 @@ document.addEventListener("pjax:complete", function() {
 
 new Pjax({ selectors: ['title', 'article.content'] });
 
+// Smooth scroll
+
 smoothScroll.init({ speed: 400 });
+
+// Videos
 
 var videos = document.getElementsByClassName('video');
 

@@ -3,6 +3,7 @@ author: Étienne Després
 description: "Design, programmation, 3D, illustration et autres patentes."
 permalink: /:title
 host: 0.0.0.0
+exclude: ['node_modules', 'yarn.lock', 'webpack.config.js', 'package.json']
 
 collections:
   projects-en:

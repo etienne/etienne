@@ -1,5 +1,6 @@
-Mon site web, pour l'instant inexistant.
+Mon site web.
 
 ```
 jekyll serve
+webpack
 ```
