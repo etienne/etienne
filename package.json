@@ -1,0 +1,15 @@
+{
+  "name": "etienne-website",
+  "version": "1.0.0",
+  "description": "Mon site web",
+  "main": "js/index.js",
+  "repository": "https://github.com/etienne/etienne.git",
+  "author": "Étienne Després <etienne@pochour.com>",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {
+    "@vimeo/player": "^2.1.0",
+    "pjax": "^0.2.4",
+    "smooth-scroll": "github:cferdinandi/smooth-scroll"
+  }
+}

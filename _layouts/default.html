@@ -5,18 +5,16 @@
 <html lang="{{ page.language }}">
   <head>
     <meta charset="utf-8">
-    <title>Étienne Després</title>
+    <title>{{ page.title }} – Étienne Després</title>
     <link rel="stylesheet" href="/css/styles.css" type="text/css" media="screen">
     <meta name="description" content="{{ site.description }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="/favicon.png">
-    <script src="/js/smooth-scroll.min.js"></script>
   </head>
   <body{% if page.slug %} class="{{ page.slug }}"{% endif %}>
     {% include header.html %}
     {{ content }}
     {% include footer.html %}
-    <script src="https://player.vimeo.com/api/player.js"></script>
-    <script src="/js/index.js"></script>
+    <script src="/js/bundle.js"></script>
   </body>
 </html>
