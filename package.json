@@ -7,7 +7,10 @@
   "author": "Étienne Després <etienne@pochour.com>",
   "license": "MIT",
   "devDependencies": {
-    "webpack": "^2.6.1"
+    "gulp": "^3.9.1",
+    "gulp-responsive": "^2.7.0",
+    "webpack": "^2.6.1",
+    "webpack-stream": "^3.2.0"
   },
   "dependencies": {
     "@vimeo/player": "^2.1.0",
