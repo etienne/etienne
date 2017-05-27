@@ -30,7 +30,7 @@ gulp.task('images', function () {
       },
       '**/thumbnail.png': {
         width: 700,
-        quality: 40,
+        quality: 70,
         progressive: true,
         format: 'jpeg',
         rename: {
