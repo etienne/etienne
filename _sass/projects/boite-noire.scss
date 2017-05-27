@@ -1,0 +1,15 @@
+body.boite-noire {
+  background-color: black;
+
+  img.hero {
+    width: 250%;
+
+    @include tablet {
+      width: 150%;
+    }
+
+    @include desktop {
+      width: 100%;
+    }
+  }
+}

@@ -1,5 +1,6 @@
 article.content {
   @include clearfix;
+  overflow: hidden;
   
   section {
     @include container;
