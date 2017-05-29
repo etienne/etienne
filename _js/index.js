@@ -2,6 +2,25 @@ import Pjax from 'pjax';
 import smoothScroll from 'smooth-scroll';
 import Player from '@vimeo/player';
 
+// Home
+
+var cycleButton = document.getElementById('cycle-button');
+if (cycleButton) {
+  cycleButton.onclick = function() {
+    var currentGroup = parseInt(this.dataset.currentGroup);
+    var totalGroups = parseInt(document.querySelector('.cycle span:last-child').dataset.group);
+    var nextGroup = currentGroup + 1 > totalGroups ? 1 : currentGroup + 1;
+    document.querySelectorAll('.cycle span').forEach(function(element) {
+      element.classList.add('hide');
+    });
+    document.querySelectorAll(".cycle span[data-group='" + nextGroup + "']").forEach(function(element) {
+      element.classList.remove('hide');
+    });
+    this.dataset.currentGroup = nextGroup;
+    return false;
+  };
+}
+
 // Pjax
 
 document.addEventListener("pjax:complete", function() {
