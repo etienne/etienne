@@ -20,23 +20,34 @@ gulp.task('js', function() {
 gulp.task('images', function () {
   return gulp.src('_images/**/*.png')
     .pipe(responsive({
-      '**/*.png': {
-        quality: 70,
-        progressive: true,
-        format: 'jpeg',
-        rename: {
-          extname: '.jpg',
+      '**/!(thumbnail).png': [
+        {
+          quality: 70,
+          progressive: true,
+          format: 'jpeg',
+          rename: {
+            extname: '.jpg',
+          },
         },
-      },
-      '**/thumbnail.png': {
-        width: 700,
-        quality: 70,
-        progressive: true,
-        format: 'jpeg',
-        rename: {
-          extname: '.jpg',
+        {
+          progressive: true,
+        }
+      ],
+      '**/thumbnail.png': [
+        {
+          width: 700,
+          quality: 70,
+          progressive: true,
+          format: 'jpeg',
+          rename: {
+            extname: '.jpg',
+          },
         },
-      },
+        {
+          width: 700,
+          progressive: true,
+        }
+      ],
     }))
     .pipe(gulp.dest('images'));
 });
