@@ -22,7 +22,7 @@ gulp.task('images', function () {
     .pipe(responsive({
       '**/!(thumbnail).png': [
         {
-          quality: 70,
+          quality: 80,
           progressive: true,
           format: 'jpeg',
           rename: {
@@ -36,7 +36,7 @@ gulp.task('images', function () {
       '**/thumbnail.png': [
         {
           width: 700,
-          quality: 70,
+          quality: 80,
           progressive: true,
           format: 'jpeg',
           rename: {
