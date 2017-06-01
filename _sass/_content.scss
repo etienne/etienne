@@ -83,20 +83,29 @@ article.content {
       }
     }
     
-    a.play {
+    a.button {
       font-weight: bold;
       display: inline-block;
       border: 2px solid white;
       padding: 1.125em 1.5em;
-      
+
       @include tablet {
         padding: 1.5em 2em;
       }
       
-      &:before {
+      &.play:before {
         content: "▷";
         font-size: 140%;
         margin-right: 1.1em;
+      }
+      
+      &.next:after {
+        position: relative;
+        top: 0.05em;
+        font-weight: normal;
+        content: "→";
+        font-size: 170%;
+        margin-left: 0.7em;
       }
     }
   }

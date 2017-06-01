@@ -1,0 +1,7 @@
+body.marais-du-nord {
+  background-color: #54205D;
+
+  section.wide {
+    @include image-container(2048, 1359);
+  }
+}
