@@ -2,14 +2,10 @@ body.safia-nolin {
   background-color: #1c1f1d;
   
   section.screenshot {
-    img {
-      width: 200%;
-      margin-left: -50%;
-      
-      @include tablet {
-        width: 100%;
-        margin-left: 0;
-      }
-    }
+    @include image-container(2048, 858);
+  }
+  
+  div.breakdown {
+    padding-bottom: 100% * 858/2048;
   }
 }

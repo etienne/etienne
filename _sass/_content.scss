@@ -24,7 +24,7 @@ article.content {
     }
   }
   
-  & > section:first-child, section.superimposed {
+  & > section:not(.wide):first-child, section.superimposed {
     padding-top: 5em;
 
     @include tablet {
@@ -39,10 +39,6 @@ article.content {
   img {
     display: block;
     width: 100%;
-    
-    &.hero {
-      @include section-margins;
-    }
   }
   
   div.text {

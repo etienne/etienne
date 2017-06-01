@@ -78,6 +78,35 @@
   }
 }
 
+@mixin image-container($width, $height, $mobile-width:200%, $mobile-left-margin:-50%, $tablet-width:100%, $tablet-left-margin:0) {
+  position: relative;
+  padding-bottom: $mobile-width * $height / $width;
+  
+  @include tablet {
+    padding-bottom: $tablet-width * $height / $width;
+  }
+  
+  @include desktop {
+    padding-bottom: 100% * $height / $width;
+  }
+  
+  img {
+    position: absolute;
+    width: $mobile-width;
+    margin-left: $mobile-left-margin;
+  
+    @include tablet {
+      width: $tablet-width;
+      margin-left: $tablet-left-margin;
+    }
+
+    @include desktop {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+}
+
 @mixin breakpoint($min-width) {
   @media only screen and (min-width : $min-width) {
     @content

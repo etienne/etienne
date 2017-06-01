@@ -1,13 +1,7 @@
 body.faust {
   background-color: #0d0d0a;
-
-  img.hero {
-    width: 200%;
-    margin-left: -50%;
-
-    @include tablet {
-      width: 100%;
-      margin-left: 0;
-    }
+  
+  section.wide {
+    @include image-container(1440, 1147);
   }
 }

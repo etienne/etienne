@@ -1,15 +1,7 @@
 body.boite-noire {
   background-color: black;
-
-  img.hero {
-    width: 250%;
-
-    @include tablet {
-      width: 150%;
-    }
-
-    @include desktop {
-      width: 100%;
-    }
+  
+  section.wide {
+    @include image-container(1920, 1097, 250%, 0, 150%, 0);
   }
 }

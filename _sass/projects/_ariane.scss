@@ -1,13 +1,7 @@
 body.ariane {
   background-color: #051017;
-
-  img.hero {
-    width: 230%;
-    margin-left: -55%;
-    
-    @include tablet {
-      width: 100%;
-      margin-left: 0;
-    }
+  
+  section.wide {
+    @include image-container(1920, 1300, 230%, -55%);
   }
 }

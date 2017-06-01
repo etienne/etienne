@@ -35,15 +35,7 @@ body.apollo-11 {
       padding-top: 5em;
     }
     
-    img {
-      width: 160%;
-      margin-left: -38%;
-      
-      @include tablet {
-        width: 100%;
-        margin-left: 0;
-      }
-    }
+    @include image-container(1917, 878, 160%, -38%);
   }
 }
 
