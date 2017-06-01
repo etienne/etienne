@@ -1,0 +1,7 @@
+body.souffle-et-reminiscence {
+  background-color: #0d0b0a;
+  
+  section.wide {
+    @include image-container(2048, 1600, 230%, -55%);
+  }
+}
