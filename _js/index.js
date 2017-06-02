@@ -26,16 +26,7 @@ if (cycleButton) {
 document.addEventListener("pjax:complete", function() {
   var slug = document.querySelector('article.content').dataset.bodyClass || '';
   document.body.className = slug;
-  var currentProject = document.querySelector('article.current');
-  
-  if (currentProject) {
-    currentProject.classList.remove('current');
-  }
-  
-  if (slug) {
-    document.querySelector('article.' + slug).classList.add('current');
-  }
-})
+});
 
 new Pjax({ selectors: ['title', 'article.content', 'body > section'] });
 
