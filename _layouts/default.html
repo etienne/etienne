@@ -5,7 +5,14 @@
 <html lang="{{ page.language }}">
   <head>
     <meta charset="utf-8">
-    <title>{{ page.title }} – Étienne Després</title>
+    <title>
+      {% if page.title %}
+        {{ page.title | append: " – " | append: site.title }} 
+      {% else %}
+        {{ site.title }} – Design, vidéo, plein d’affaires
+      {% endif %}
+      Étienne Després
+    </title>
     <link rel="stylesheet" href="/css/styles.css" type="text/css" media="screen">
     <meta name="description" content="{{ site.description }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
