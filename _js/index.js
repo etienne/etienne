@@ -37,7 +37,7 @@ document.addEventListener("pjax:complete", function() {
   }
 })
 
-new Pjax({ selectors: ['title', 'article.content'] });
+new Pjax({ selectors: ['title', 'article.content', 'body > section'] });
 
 // Smooth scroll
 

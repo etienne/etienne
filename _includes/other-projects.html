@@ -1,0 +1,33 @@
+{% if page.language == "fr" %}
+  {% assign projects = site.projects-fr %}
+{% else %}
+  {% assign projects = site.projects-en %}
+{% endif %}
+
+{% for type in site.types %}
+  {% assign sorted_projects = projects | sort: 'date' | reverse %}
+  {% for project in sorted_projects %}
+    {% if project.type == type %}
+      {% if first_project == nil %}
+        {% assign first_project = project %}
+      {% endif %}
+      {% if next_project_flag %}
+        {% assign next_project = project %}
+        {% assign next_project_flag = false %}
+      {% endif %}
+      {% if project.slug == page.slug %}
+        {% assign next_project_flag = true %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+
+{% if next_project == nil %}
+  {% assign next_project = first_project %}
+{% endif %}
+
+<section class="other-projects">
+  {% include project-item.html project=next_project next=true %}
+  <span class="all"><a href="/#video" class="all">Tous les projets</a></span>
+</section>
+
