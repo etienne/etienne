@@ -3,6 +3,9 @@ header nav {
 
   @include tablet {
     font-weight: bold;
+  }
+  
+  @include desktop {
     float: left;
     width: 50%;
   }
