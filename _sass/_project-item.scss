@@ -33,8 +33,12 @@ article.project-item {
     display: block;
     position: absolute;
     opacity: 0.88;
-    transition: opacity $transition-speed;
+    transition: opacity $transition-speed, transform $transition-speed;
     -webkit-backface-visibility: hidden;
+    
+    &:hover {
+      transform: scale(1.01);
+    }
   }
   
   a {

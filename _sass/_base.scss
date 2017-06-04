@@ -30,13 +30,15 @@ p {
 }
 
 a {
+  position: relative;
   color: $text-color;
   text-decoration: none;
   border-bottom: 2px solid transparent;
-  transition: border $transition-speed;
+  transition: border $transition-speed, transform $transition-speed;
   
   &:hover {
     border-bottom-color: white;
+    transform: translateY(-2px);
   }
 }
 
