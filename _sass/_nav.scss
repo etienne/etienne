@@ -2,6 +2,7 @@ header nav {
   float: right;
 
   @include tablet {
+    font-weight: bold;
     float: left;
     width: 50%;
   }
@@ -11,7 +12,7 @@ header nav {
     
     li {
       float: left;
-      margin-left: 18px;
+      margin-left: 14px;
       
       @include tablet {
         margin-left: 22px;
@@ -27,7 +28,6 @@ header nav {
     }
     
     a {
-      font-weight: bold;
       display: block;
       
       span.expanded-word {

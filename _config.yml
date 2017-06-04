@@ -19,11 +19,13 @@ i18n:
   fr:
     video: "Vidéo & 3D"
     design: "Design"
+    about: "À propos"
     contact: "Contact"
     language: "English"
   en:
     video: "Video & 3D"
     design: "Design"
+    about: "About"
     contact: "Contact"
     language: "Français"
     
