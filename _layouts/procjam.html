@@ -1,0 +1,27 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="{{ page.language }}">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      {% if page.title %}
+        {{ page.title | append: " – " | append: site.title }} 
+      {% else %}
+        {{ site.title }} – Design, vidéo, plein d’affaires
+      {% endif %}
+    </title>
+    <link rel="stylesheet" href="/css/styles.css" type="text/css" media="screen">
+    <meta name="description" content="{{ site.description }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/favicon.png">
+  </head>
+  <body{% if page.slug %} class="{{ page.slug }}"{% endif %}>
+    <article class="content" data-body-class="{{ page.slug }}">
+      {{ content }}
+    </article>
+    {% include footer.html %}
+    <script type="text/javascript" src="/js/bundle.js"></script>
+  </body>
+</html>
