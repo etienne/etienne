@@ -15,6 +15,11 @@ body.procjam {
     }
     
     div.text {
+      p.foot {
+        margin: 6em 0;
+        @include normal-text;
+      }
+      
       @include desktop {
         padding-left: 0;
         width: 70%;
