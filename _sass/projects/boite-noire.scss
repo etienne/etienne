@@ -1,0 +1,7 @@
+body.boite-noire {
+  background-color: black;
+  
+  section.wide {
+    @include image-container(1920, 1097, 250%, 0, 150%, 0);
+  }
+}

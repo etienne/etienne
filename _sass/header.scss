@@ -1,0 +1,50 @@
+header#menu {
+  @include container;
+  @include clearfix;
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 1em 0;
+  color: white;
+  z-index: 2;
+  
+  @include tablet {
+    padding: 2em 0;
+  }
+
+  @include desktop {
+    padding: 3em 0;
+  }
+
+  h1 {
+    float: left;
+    
+    @include desktop {
+      width: 50%;
+    }
+    
+    a {
+      display: inline-block;
+    }
+    
+    body:not([class]) & {
+      a {
+        border-bottom: none;
+      }
+      
+      @include desktop {
+        @include medium-text;
+        position: relative;
+        top: 6.2em;
+      }
+    }
+    
+    body[class] &:before {
+      position: relative;
+      top: 0.05em;
+      content: '←';
+      font-size: 125%;
+      margin-right: 0.5em;
+    }
+  }
+}

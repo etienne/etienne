@@ -1,3 +1,31 @@
+title: Étienne Després
+author: Étienne Després
+description: "Design, programmation, 3D, illustration et autres patentes."
+permalink: /:title
+host: 0.0.0.0
+exclude: ['node_modules', 'yarn.lock', 'webpack.config.js', 'package.json']
+
 collections:
-  projects:
+  projects-en:
     output: true
+    permalink: /en/projects/:title
+  projects-fr:
+    output: true
+    permalink: /projets/:title
+
+types: [video, design]
+
+i18n:
+  fr:
+    video: "Vidéo & 3D"
+    design: "Design"
+    about: "À propos"
+    contact: "Contact"
+    language: "English"
+  en:
+    video: "Video & 3D"
+    design: "Design"
+    about: "About"
+    contact: "Contact"
+    language: "Français"
+    

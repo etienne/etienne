@@ -1,0 +1,67 @@
+section.other-projects {
+  @include container;
+  @include clearfix;
+  margin-top: 2em;
+  
+  @include tablet {
+    margin-top: 6em;
+  }
+  
+  span.all {
+    font-weight: bold;
+    
+    &:before {
+      content: '←';
+      margin-right: 0.5em;
+      font-size: 125%;
+    }
+    
+    a {
+      display: inline-block;
+    }
+  }
+  
+  article {
+    @include mobile-only {
+      margin-bottom: 1.2em;
+    }
+    
+    @include tablet {
+      float: right;
+      width: 50%;
+    }
+    
+    @include desktop {
+      @include medium-text;
+    }
+    
+    h1 {
+      display: inline;
+      border-bottom: 2px solid transparent;
+      transition: border-color $transition-speed;
+
+      @include desktop {
+        @include medium-text;
+      }
+    }
+    
+    a {
+      @include clearfix;
+      display: block;
+      border: 2px solid white;
+      padding: 1em;
+      
+      img {
+        width: 50%;
+        float: right;
+        margin-left: 1em;
+      }
+      
+      &:hover {
+        h1 {
+          border-bottom-color: white;
+        }
+      }
+    }
+  }
+}

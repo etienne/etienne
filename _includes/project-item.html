@@ -1,0 +1,7 @@
+<article class="{% if include.next != true %}project-item{% endif %} {{ include.project.slug }} {{ page.language }}">
+  <a href="{{ include.project.url }}">
+    <img src="/images/{{ include.project.slug }}/thumbnail.jpg" alt="Aperçu du projet {{ include.project.title }}">
+    {% if include.next %}<div class="label">Projet suivant</div>{% endif %}
+    <h1>{{ include.project.title }}</h1>
+  </a>
+</article>

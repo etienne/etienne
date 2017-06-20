@@ -1,0 +1,41 @@
+body.apollo-11 {
+  background: #042431 url(../images/apollo-11/stars.png) repeat-x;
+  background-size: 300%;
+  
+  @include tablet {
+    background-size: 150%;
+  }
+  
+  @include desktop {
+    background-size: 100%;
+  }
+  
+  img.eagle {
+    display: block;
+    width: 55%;
+    margin: 0 auto 2.5em;
+    
+    @include tablet {
+      width: 33%;
+    }
+    
+    @include desktop {
+      float: left;
+      clear: both;
+      width: 30%;
+      margin-top: 2em;
+      margin-left: 9%;
+    }
+  }
+  
+  section.screenshot {
+    padding-top: 2em;
+    
+    @include tablet {
+      padding-top: 5em;
+    }
+    
+    @include image-container(1917, 878, 160%, -38%);
+  }
+}
+

@@ -1,0 +1,7 @@
+body.ariane {
+  background-color: #051017;
+  
+  section.wide {
+    @include image-container(1920, 1300, 230%, -55%);
+  }
+}

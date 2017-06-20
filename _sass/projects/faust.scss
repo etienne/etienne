@@ -1,0 +1,7 @@
+body.faust {
+  background-color: #0d0d0a;
+  
+  section.wide {
+    @include image-container(1440, 1147);
+  }
+}

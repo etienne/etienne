@@ -1,0 +1,7 @@
+body.bibliotheques-de-montreal {
+  background-color: #3d2a5e;
+
+  section.wide {
+    @include image-container(2000, 1436);
+  }
+}

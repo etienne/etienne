@@ -1,0 +1,124 @@
+// Typography
+
+@mixin small-text {
+  font-size: 10px;
+  line-height: 16px;
+
+  @include tablet {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+@mixin normal-text {
+  font-size: 13px;
+  line-height: 19px;
+
+  @include tablet {
+    font-size: 16px;
+    line-height: 23px;
+  }
+}
+
+@mixin medium-text {
+  font-size: 17px;
+  line-height: 24px;
+
+  @include tablet {
+    font-size: 25px;
+    line-height: 35px;
+  }
+}
+
+@mixin big-text {
+  font-size: 28px;
+  line-height: 37px;
+
+  @include tablet {
+    font-size: 46px;
+    line-height: 58px;
+  }
+}
+
+// Layout
+
+@mixin clearfix {
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin no-bullets {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+@mixin container {
+  width: 92%;
+  max-width: 1152px;
+  margin: 0 auto;
+}
+
+@mixin section-margins {
+  margin-bottom: 2em;
+
+  @include tablet {
+    margin-bottom: 2.5em;
+  }
+
+  @include desktop {
+    margin-bottom: 3.5em;
+  }
+}
+
+@mixin image-container($width, $height, $mobile-width:200%, $mobile-left-margin:-50%, $tablet-width:100%, $tablet-left-margin:0) {
+  position: relative;
+  padding-bottom: $mobile-width * $height / $width;
+  
+  @include tablet {
+    padding-bottom: $tablet-width * $height / $width;
+  }
+  
+  @include desktop {
+    padding-bottom: 100% * $height / $width;
+  }
+  
+  img {
+    position: absolute;
+    width: $mobile-width;
+    margin-left: $mobile-left-margin;
+  
+    @include tablet {
+      width: $tablet-width;
+      margin-left: $tablet-left-margin;
+    }
+
+    @include desktop {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+}
+
+@mixin breakpoint($min-width) {
+  @media only screen and (min-width : $min-width) {
+    @content
+  }
+}
+
+@mixin tablet        { @include breakpoint($tablet)        { @content } }
+@mixin desktop       { @include breakpoint($desktop)       { @content } }
+@mixin desktop-large { @include breakpoint($desktop-large) { @content } }
+
+@mixin mobile-only {
+  @media only screen and (max-width : $tablet - 1px) {
+    @content
+  }
+}

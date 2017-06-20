@@ -1,0 +1,157 @@
+article.content {
+  @include clearfix;
+  overflow: hidden;
+  
+  section {
+    @include container;
+    @include clearfix;
+    @include section-margins;
+    position: relative;
+    
+    &.wide, &.wrapper {
+      width: 100%;
+      max-width: 100%;
+    }
+    
+    &.screenshot {
+      overflow: hidden;
+    }
+    
+    &.superimposed {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+  }
+  
+  & > section:not(.wide):first-child, section.superimposed {
+    padding-top: 5em;
+
+    @include tablet {
+      padding-top: 8em;
+    }
+
+    @include desktop {
+      padding-top: 12em;
+    }
+  }
+  
+  img {
+    display: block;
+    width: 100%;
+  }
+  
+  div.text {
+    @include desktop {
+      padding-left: 50%;
+    }
+    
+    h1 {
+      @include big-text;
+      margin: 0;
+    }
+    
+    h2 {
+      display: inline-block;
+      padding-bottom: 0.3em;
+      margin-top: 1.3em;
+      margin-bottom: 1em;
+      border-bottom: 2px solid;
+    }
+    
+    p {
+      @include medium-text;
+      margin: 0 0 0.75em;
+      
+      &:last-child {
+        margin-bottom: 0;
+      }
+      
+      &.intro {
+        @include big-text;
+    
+        a {
+          border: none;
+          box-shadow: inset 0 -3px rgba(white, 0.3);
+          transition: box-shadow $transition-speed;
+  
+          &:hover {
+            box-shadow: inset 0 -3px white;
+          }
+        }
+      }
+      
+      a {
+        border-bottom: 2px solid rgba(white, 0.3);
+        transition: border $transition-speed;
+      
+        &:hover {
+          border-bottom-color: white;
+        }
+      }
+    }
+    
+    ul:not([class]) {
+      @include medium-text;
+      @include no-bullets;
+    }
+    
+    aside {
+      border: 2px solid;
+      padding: 0.8em 1em;
+      margin: 1.5em 0;
+      
+      @include tablet {
+        width: 46%;
+        float: left;
+        padding: 1.4em 1.8em;
+        margin: 0 1.5em 0 0;
+      }
+
+      @include desktop {
+        float: none;
+        width: auto;
+        max-width: 46%;
+        padding: 1.6em 1.9em;
+        position: absolute;
+        left: 0;
+      }
+      
+      * {
+        @include normal-text;
+      }
+      
+      h2 {
+        border: none;
+        margin: 0 0 0.25em;
+      }
+    }
+    
+    a.button {
+      font-weight: bold;
+      display: inline-block;
+      border: 2px solid white;
+      padding: 1.125em 1.5em;
+
+      @include tablet {
+        padding: 1.5em 2em;
+      }
+      
+      &.play:before {
+        content: "▷";
+        font-size: 140%;
+        margin-right: 1.1em;
+      }
+      
+      &.next:after {
+        position: relative;
+        top: 0.05em;
+        font-weight: normal;
+        content: "→";
+        font-size: 170%;
+        margin-left: 0.7em;
+      }
+    }
+  }
+}

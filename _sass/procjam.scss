@@ -1,0 +1,44 @@
+body.procjam {
+  background-color: #191919;
+  
+  article.content {
+    & > section:not(.wide):first-child, section.superimposed {
+      padding-top: 3em;
+
+      @include tablet {
+        padding-top: 6em;
+      }
+
+      @include desktop {
+        padding-top: 10em;
+      }
+    }
+    
+    div.text {
+      p.foot {
+        margin: 6em 0;
+        @include normal-text;
+      }
+      
+      @include desktop {
+        padding-left: 0;
+        width: 70%;
+        margin: 0 auto;
+      }
+    }
+    
+    section.wide {
+//      background-color: rgba(black, 0.25);
+//      padding-top: 2.5em;
+//      padding-bottom: 2.5em;
+      
+      div.screenshot {
+        @include container;
+      }
+    }
+  }
+  
+  .caption {
+    margin-top: 1.5em;
+  }
+}

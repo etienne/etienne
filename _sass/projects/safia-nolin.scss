@@ -1,0 +1,11 @@
+body.safia-nolin {
+  background-color: #1c1f1d;
+  
+  section.screenshot {
+    @include image-container(2048, 858);
+  }
+  
+  div.breakdown {
+    padding-bottom: 100% * 858/2048;
+  }
+}

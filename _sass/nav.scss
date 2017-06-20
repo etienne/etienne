@@ -1,0 +1,43 @@
+header nav {
+  float: right;
+
+  @include tablet {
+    font-weight: bold;
+  }
+  
+  @include desktop {
+    float: left;
+    width: 50%;
+  }
+
+  ul {
+    @include no-bullets;
+    
+    li {
+      float: left;
+      margin-left: 14px;
+      
+      @include tablet {
+        margin-left: 22px;
+      }
+      
+      @include desktop {
+        margin-left: 32px;
+      }
+      
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+    
+    a {
+      display: block;
+      
+      span.expanded-word {
+        @include mobile-only {
+          display: none;
+        }
+      }
+    }
+  }
+}

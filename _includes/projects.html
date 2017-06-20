@@ -1,0 +1,21 @@
+{% if page.language == "fr" %}
+  {% assign projects = site.projects-fr %}
+{% else %}
+  {% assign projects = site.projects-en %}
+{% endif %}
+
+{% for type in site.types %}
+  <section class="projects" id="{{ type }}">
+    <header>
+      <h1>{{ site.i18n[page.language][type] }}</h1>
+    </header>
+    <ul>
+      {% assign sorted_projects = projects | sort: 'date' | reverse %}
+      {% for project in sorted_projects %}
+        {% if project.type == type %}
+          <li>{% include project-item.html project=project %}</li>
+        {% endif %}
+      {% endfor %}
+    </div>  
+  </section>
+{% endfor %}
