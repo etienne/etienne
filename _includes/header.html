@@ -1,4 +1,4 @@
 <header id="menu">
-  <h1><a href="{% if page.language == 'fr' %}/{% else %}/en{% endif %}">Étienne Després</a></h1>
+  <h1><a href="{{ site.i18n[page.language]index_url }}">Étienne Després</a></h1>
   {% include nav.html %}
 </header>

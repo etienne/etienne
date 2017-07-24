@@ -43,3 +43,17 @@ a {
 address {
   font-style: normal;
 }
+
+q {
+  html[lang=fr] & {
+    &:before {
+      content: "«";
+      padding-right: 0.18em;
+    }
+    
+    &:after {
+      content: "»";
+      padding-left: 0.18em;
+    }
+  }
+}

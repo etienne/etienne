@@ -17,12 +17,14 @@ types: [video, design]
 
 i18n:
   fr:
+    index_url: '/index_new'
     video: "Vidéo & 3D"
     design: "Design"
     about: "À propos"
     contact: "Contact"
     language: "English"
   en:
+    index_url: '/en/'
     video: "Video & 3D"
     design: "Design"
     about: "About"

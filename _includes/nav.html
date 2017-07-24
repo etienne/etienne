@@ -7,14 +7,22 @@
 
 <nav>
   <ul>
-    <li class="hide-mobile"><a href="#video" data-scroll>{{ site.i18n[page.language]video }}</a></li>
-    <li class="hide-mobile"><a href="#design" data-scroll>{{ site.i18n[page.language]design }}</a></li>
+    <li class="hide-mobile">
+      <a href="{{ site.i18n[page.language]index_url }}#video" data-scroll>
+        {{ site.i18n[page.language]video }}
+      </a>
+    </li>
+    <li class="hide-mobile">
+      <a href="{{ site.i18n[page.language]index_url }}#design" data-scroll>
+        {{ site.i18n[page.language]design }}
+      </a>
+    </li>
     <li><a href="/a-propos">{{ site.i18n[page.language]about }}</a></li>
     <li><a href="#contact" data-scroll>{{ site.i18n[page.language]contact }}</a></li>
-    <li>
+    <!--<li>
       <a href="{{ language_url }}">
         {{ language_label | slice: 0, 2 }}<span class="expanded-word">{{ language_label | slice: 2, 99 }}</span>
       </a>
-    </li>
+    </li>-->
   </ul>  
 </nav>
