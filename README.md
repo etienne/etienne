@@ -16,9 +16,15 @@ npm install -g node-gyp
 cd node_modules/sharp && node-gyp rebuild
 ```
 
-## Usage
+## Démarrer le serveur
 
 ```
 bundle exec jekyll serve --livereload
 gulp
+```
+
+## Tester les liens
+
+```
+rake test
 ```
