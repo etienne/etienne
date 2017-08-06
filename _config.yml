@@ -17,6 +17,8 @@ types: [video, design]
 
 i18n:
   fr:
+    all_projects: 'Tous les projets'
+    next_project: 'Projet suivant'
     index_url: '/index_new'
     video: "Vidéo & 3D"
     design: "Design"
@@ -24,6 +26,8 @@ i18n:
     contact: "Contact"
     language: "English"
   en:
+    all_projects: 'All projects'
+    next_project: 'Next project'
     index_url: '/en/'
     video: "Video & 3D"
     design: "Design"

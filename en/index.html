@@ -1,11 +1,25 @@
 ---
-title: Projects
 language: en
 layout: default
 ---
 
-<section class="intro">
-  <p>Hello. I’m not cool for real, but I do design, video, 3D. All kinds of stuff.</p>
-</section>
+<article class="content">
+  <section>
+    <div class="text">
+      <p class="intro">
+        Hello. I’m not cool for real, but I make
+        <span class="cycle">
+          <span data-group="1"><a href="/en/projects/apollo-11">video games</a>,</span> 
+          <span data-group="1"><a href="/en/projects/safia-nolin">spaceships</a>,</span> 
+          <span class="hide" data-group="2"><a href="/en/projects/boite-noire">installations</a>,</span> 
+          <span class="hide" data-group="2"><a href="/en/projects/le-husky">flying trees</a>,</span> 
+          <span class="hide" data-group="3"><a href="/en/projects/marais-du-nord">websites</a>,</span> 
+          <span class="hide" data-group="3"><a href="/en/projects/ducasse-de-mons">fake video games</a>,</span> 
+        </span>
+        <a id="cycle-button" data-current-group="1" href="?cycle=2">all kinds of stuff</a>.
+      </p>
+    </div>
+  </section>
+</article>
 
 {% include projects.html %}

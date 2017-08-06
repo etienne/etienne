@@ -12,7 +12,7 @@
     <ul>
       {% assign sorted_projects = projects | sort: 'date' | reverse %}
       {% for project in sorted_projects %}
-        {% if project.type == type %}
+        {% if project.type == type and project.published %}
           <li>{% include project-item.html project=project %}</li>
         {% endif %}
       {% endfor %}

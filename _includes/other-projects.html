@@ -7,7 +7,7 @@
 {% for type in site.types %}
   {% assign sorted_projects = projects | sort: 'date' | reverse %}
   {% for project in sorted_projects %}
-    {% if project.type == type %}
+    {% if project.type == type and project.published %}
       {% if first_project == nil %}
         {% assign first_project = project %}
       {% endif %}
@@ -28,6 +28,10 @@
 
 <section class="other-projects">
   {% include project-item.html project=next_project next=true %}
-  <span class="all"><a href="/#video" class="all">Tous les projets</a></span>
+  <span class="all">
+    <a href="{{ site.i18n[page.language]index_url }}" class="all">
+      {{ site.i18n[page.language]all_projects }}
+    </a>
+  </span>
 </section>
 
