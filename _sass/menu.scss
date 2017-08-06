@@ -28,6 +28,10 @@ header nav {
       &:first-child {
         margin-left: 0;
       }
+      
+      &.language {
+        font-weight: normal;
+      }
     }
     
     a {
