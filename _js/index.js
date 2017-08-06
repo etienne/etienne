@@ -1,5 +1,5 @@
 import Pjax from 'pjax';
-import smoothScroll from 'smooth-scroll';
+import SmoothScroll from 'smooth-scroll';
 import Player from '@vimeo/player';
 
 // Home
@@ -31,8 +31,7 @@ document.addEventListener("pjax:complete", function() {
 new Pjax({ selectors: ['title', 'header#menu', 'article.content', 'body > section', 'footer#contact'] });
 
 // Smooth scroll
-
-smoothScroll.init({ speed: 400 });
+var smoothScroll = new SmoothScroll('a[href*="#"]', { speed: 400 });
 
 // Videos
 
