@@ -28,7 +28,7 @@ document.addEventListener("pjax:complete", function() {
   document.body.className = slug;
 });
 
-new Pjax({ selectors: ['title', 'article.content', 'body > section'] });
+new Pjax({ selectors: ['title', 'header#menu', 'article.content', 'body > section', 'footer#contact'] });
 
 // Smooth scroll
 
