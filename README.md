@@ -5,21 +5,20 @@ Mon site web.
 ```
 gem install bundler
 bundle
-brew install yarn
 brew install homebrew/science/vips --with-webp --with-graphicsmagick
-yarn
+npm install
 ```
 
 Peut-être nécessaire:
 
 ```
-yarn global add node-gyp
+npm install -g node-gyp
 cd node_modules/sharp && node-gyp rebuild
 ```
 
 ## Usage
 
 ```
-bundle exec jekyll serve
+bundle exec jekyll serve --livereload
 gulp
 ```
