@@ -2,26 +2,6 @@ div.video {
   position: relative;
   cursor: pointer;
   
-  &:not([data-vimeo-initialized]):after {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    content: "▷";
-    font-size: 1.5em;
-    text-align: center;
-    border: 2px solid;
-    width: 4em;
-    line-height: 2.6em;
-    margin: -1.3em 0 0 -2em;
-  
-    @include tablet {
-      font-size: 2em;
-      width: 3em;
-      line-height: 2.4em;
-      margin: -1.2em 0 0 -1.5em;
-    }
-  }
-  
   &:hover {
     img {
       opacity: 1;
@@ -32,6 +12,37 @@ div.video {
     transition: opacity $transition-speed;
     -webkit-backface-visibility: hidden;
     opacity: 0.75;
+  }
+  
+  div.play {
+    display: none;
+  }
+  
+  &:not([data-vimeo-initialized]) div.play {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid white;
+    padding: 1rem 1rem 1rem 4rem;
+    -webkit-backface-visibility: hidden;
+    
+    &:after {
+      box-sizing: border-box;
+      content: "▷";
+      font-size: 16px;
+      position: absolute;
+      height: 100%;
+      top: 0;
+      left: 0;
+      padding: 1rem;
+      border-right: 2px solid white;
+      
+      @include tablet {
+        font-size: 22px;
+      }
+    }
   }
   
   iframe {

@@ -25,6 +25,7 @@ i18n:
     about: "À propos"
     contact: "Contact"
     language: "English"
+    preview: "Aperçu"
   en:
     all_projects: 'All projects'
     next_project: 'Next project'
@@ -34,4 +35,5 @@ i18n:
     about: "About"
     contact: "Contact"
     language: "Français"
+    preview: "Preview image"
     

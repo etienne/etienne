@@ -1,5 +1,7 @@
+{% assign alt = include.title | append: ' – ' | append: site.i18n[page.language]preview %}
 <section>
   <div class="video" data-vimeo-id="{{ include.id }}" data-vimeo-defer>
-    {% include image.html name=include.poster alt=include.alt %}
+    {% include image.html name=include.poster alt=alt %}
+    <div class="play">{{ include.title }}</div>
   </div>
 </section>
