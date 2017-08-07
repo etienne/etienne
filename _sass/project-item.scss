@@ -1,21 +1,21 @@
 article.project-item {
   float: left;
   width: 50%;
-  padding-bottom: 28.125%;
+  padding-bottom: 1/2 * $magic-ratio;
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   overflow: hidden;
   
-  @include tablet {
+  @include desktop {
     width: 1/3 * 100%;
-    padding-bottom: 1/3 * 56.25%;
+    padding-bottom: 1/3 * $magic-ratio;
   }
   
   @include desktop-large {
     width: 25%;
-    padding-bottom: 1/4 * 56.25%;
+    padding-bottom: 1/4 * $magic-ratio;
   }
 
   &:hover {
