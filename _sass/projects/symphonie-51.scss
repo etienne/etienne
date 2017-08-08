@@ -2,6 +2,6 @@ body.symphonie-51 {
   background-color: #0a0d0f;
   
   section.wide {
-    @include image-container(2048, 1480);
+    @include image-container(2048, 1480, 200%, -52.5%);
   }
 }
