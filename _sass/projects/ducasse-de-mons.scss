@@ -1,0 +1,29 @@
+body.ducasse-de-mons {
+  background-color: #393933;
+  
+  section.hero {
+    background-color: #2e2e2a;
+    
+    > div {
+      @include container;
+      
+      img {
+        margin: 4% 0;
+      }
+      
+      img.chat, img.main {
+        @include tablet {
+          margin-top: 0;
+          width: 48%;
+          float: left;
+        }
+      }
+
+      img.main {
+        @include tablet {
+          float: right;
+        }
+      }
+    }
+  }
+}

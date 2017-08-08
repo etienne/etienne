@@ -26,6 +26,16 @@ article.content {
           float: left;
           width: 50%;
         }
+        
+        &.padded {
+          img {
+            width: 49%;
+            
+            & + img {
+              float: right;
+            }
+          }
+        }
       }
     }
   }
