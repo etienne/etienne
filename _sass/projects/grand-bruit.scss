@@ -1,0 +1,11 @@
+body.grand-bruit {
+  background-color: #131313;
+  
+  section.hero {
+    @include image-container(2048, 840, 140%, -24%);
+    margin: 24em 0 2em;
+    
+    @include tablet {
+    }
+  }
+}
