@@ -1,7 +1,7 @@
 body.alam-al-mithal {
   background-color: #0d0d0a;
   
-  section.wide {
-    @include image-container(2048, 2048);
+  section.hero {
+    @include image-container(2048, 1715, 140%, -30%);
   }
 }

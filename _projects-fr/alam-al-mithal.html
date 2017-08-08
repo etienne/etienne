@@ -5,15 +5,28 @@ published: true
 type: video
 language: fr
 layout: project
+tags: [Direction artistique, Modélisation 3D]
 ---
 
-<section class="wide">
-  {% include image.html name="hero" alt="Pochette d’album" %}
+<section class="wide hero">
+  {% include image.html name="hero" alt="Paysage maritime" %}
 </section>
 
 <section class="superimposed">
   <div class="text">
     <h1>Alam al-Mithal</h1>
-    <p class="intro">Des paysages virtuels pour un album instrumental.</p>
+    <p class="intro">Des paysages d’un autre monde.</p>
   </div>
+</section>
+
+<section>
+  <div class="text">
+    <p>La musique d’<a href="http://www.alamalmithal.com">Alam al-Mithal</a> est sinueuse, sombre, puissante. Pour illustrer leurs albums, j’ai composé ces paysages surréels.</p>
+    {% include tags.html %}
+  </div>
+</section>
+
+<section class="wide side-by-side">
+  {% include image.html name="forest" alt="Paysage forestier" %}
+  {% include image.html name="mountain" alt="Paysage montagneux" %}
 </section>

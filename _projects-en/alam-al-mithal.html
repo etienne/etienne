@@ -5,11 +5,28 @@ published: true
 type: video
 language: en
 layout: project
+tags: [Art Direction, 3D Modeling]
 ---
+
+<section class="wide hero">
+  {% include image.html name="hero" alt="Maritime Landscape" %}
+</section>
+
+<section class="superimposed">
+  <div class="text">
+    <h1>Alam al-Mithal</h1>
+    <p class="intro">Landscapes from another world.</p>
+  </div>
+</section>
 
 <section>
   <div class="text">
-    <h1>Alam al-Mithal</h1>
-    <p class="intro">Des paysages vertigineux pour un album double.</p>
+    <p>The music of <a href="http://www.alamalmithal.com">Alam al-Mithal</a> is meandering, dark, powerful. To illustrate their albums, I composed these surreal landscapes.</p>
+    {% include tags.html %}
   </div>
+</section>
+
+<section class="wide side-by-side">
+  {% include image.html name="forest" alt="Forest Landscape" %}
+  {% include image.html name="mountain" alt="Mountain Landscape" %}
 </section>

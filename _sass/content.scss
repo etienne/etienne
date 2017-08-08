@@ -23,6 +23,15 @@ article.content {
       left: 0;
       right: 0;
     }
+    
+    &.side-by-side {
+      @include tablet {
+        img {
+          float: left;
+          width: 50%;
+        }
+      }
+    }
   }
   
   & > section:not(.wide):first-child, section.superimposed {
