@@ -24,7 +24,7 @@ if (cycleButton) {
 // Pjax
 
 document.addEventListener("pjax:complete", function() {
-  var slug = document.querySelector('article.content').dataset.bodyClass || '';
+  var slug = document.querySelector('article.content').dataset.bodyClass || 'home';
   document.body.className = slug;
 });
 
