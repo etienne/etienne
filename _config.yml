@@ -19,7 +19,7 @@ i18n:
   fr:
     all_projects: 'Tous les projets'
     next_project: 'Projet suivant'
-    index_url: '/index_new'
+    index_url: '/secret'
     video: "Vidéo & 3D"
     design: "Design"
     about: "À propos"
