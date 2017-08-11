@@ -32,6 +32,9 @@ document.addEventListener("pjax:success", function() {
   if (hash.length > 0) {
     document.querySelector('a[href="' + hash + '"]').click();
   }
+  
+  // We need to manually change the document language
+  document.querySelector('html').lang = document.querySelector('article.content').dataset.lang;
 });
 
 new Pjax({
