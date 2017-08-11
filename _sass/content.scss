@@ -57,6 +57,30 @@ article.content {
     width: 100%;
   }
   
+  p.credit {
+    @include container;
+    @include small-text;
+    text-align: right;
+    clear: both;
+    color: rgba(white, 0.5);
+    padding-top: 1em;
+    
+    @include tablet {
+      padding-top: 1.4em;
+    }
+    
+    a {
+      transition: border-color $transition-speed, color $transition-speed;
+      color: rgba(white, 0.5);
+      border-bottom: 2px solid rgba(white, 0.15);
+      
+      &:hover {
+        color: white;
+        border-bottom-color: white;
+      }
+    }
+  }
+  
   div.text {
     @include desktop {
       padding-left: 50%;
@@ -129,43 +153,6 @@ article.content {
     ul:not([class]) {
       @include medium-text;
       @include no-bullets;
-    }
-    
-    aside {
-      margin: 2em 0 1.5em;
-
-      &:before {
-        content: '';
-        display: block;
-        width: 1.4em;
-        border-top: 2px solid;
-        padding-bottom: 1em;
-      }
-      
-      @include tablet {
-        width: 46%;
-        float: left;
-        padding: 1.4em 1.8em;
-        margin: 0 1.5em 0 0;
-      }
-
-      @include desktop {
-        float: none;
-        width: auto;
-        max-width: 46%;
-        padding: 1.6em 1.9em;
-        position: absolute;
-        left: 0;
-      }
-      
-      * {
-        @include normal-text;
-      }
-      
-      h2 {
-        border: none;
-        margin: 0 0 0.25em;
-      }
     }
     
     a.button {
