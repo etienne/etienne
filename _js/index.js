@@ -23,12 +23,15 @@ if (cycleButton) {
 
 // Pjax
 
-document.addEventListener("pjax:complete", function() {
+document.addEventListener("pjax:success", function() {
   var slug = document.querySelector('article.content').dataset.bodyClass || 'home';
   document.body.className = slug;
 });
 
-new Pjax({ selectors: ['title', 'header#menu', 'article.content', 'body > section', 'footer#contact'] });
+new Pjax({
+  debug: true,
+  selectors: ['title', 'header#menu', 'article.content']
+});
 
 // Smooth scroll
 var smoothScroll = new SmoothScroll('a[href*="#"]', { speed: 400 });
