@@ -7,16 +7,21 @@
   {% assign language_url = page.url | remove: "/en" | replace: 'projects', 'projets' | replace: 'about', 'a-propos' %}
 {% endif %}
 {% assign language_label = site.i18n[page.language].language %}
+{% if page.slug == 'about' or page.slug == 'a-propos' %}
+  {% assign projects_prefix = site.i18n[page.language]index_url %}
+{% else %}
+  {% assign projects_prefix = '' %}
+{% endif %}
 
 <nav>
   <ul>
     <li class="hide-mobile">
-      <a href="#video">
+      <a href="{{ projects_prefix }}#video">
         {{ site.i18n[page.language]video }}
       </a>
     </li>
     <li class="hide-mobile">
-      <a href="#design">
+      <a href="{{ projects_prefix }}#design">
         {{ site.i18n[page.language]design }}
       </a>
     </li>

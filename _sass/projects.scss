@@ -1,18 +1,22 @@
 section.projects {
   @include clearfix;
   
-  body:not([class]) & {
+  body.home & {
     @include tablet {
       padding-top: 2em;
     }
   }
 
-  body[class] & {
+  body:not(.home) & {
     padding-top: 2em;
 
     @include tablet {
       padding-top: 4em;
     }
+  }
+  
+  body.about &, body.a-propos & {
+    display: none;
   }
   
   & + section.projects {

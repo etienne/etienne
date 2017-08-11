@@ -32,7 +32,7 @@ header#menu {
       display: inline-block;
     }
     
-    body[class=home] & {
+    body.home & {
       a {
         border-bottom: none;
       }
@@ -44,7 +44,7 @@ header#menu {
       }
     }
     
-    body:not([class=home]) &:before {
+    body:not(.home) &:before {
       position: relative;
       top: 0.05em;
       content: '←';

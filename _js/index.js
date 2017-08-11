@@ -26,10 +26,16 @@ if (cycleButton) {
 document.addEventListener("pjax:success", function() {
   var slug = document.querySelector('article.content').dataset.bodyClass || 'home';
   document.body.className = slug;
+
+  // Only used for menu links on the About page; slightly kludgy
+  var hash = document.location.hash;
+  if (hash.length > 0) {
+    document.querySelector('a[href="' + hash + '"]').click();
+  }
 });
 
 new Pjax({
-  debug: true,
+  debug: false,
   selectors: ['title', 'header#menu', 'article.content']
 });
 
