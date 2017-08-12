@@ -2,6 +2,10 @@ body.souffle-et-reminiscence {
   background-color: black;
   
   section.hero {
-    @include image-container(2048, 1387, 230%, -15%);
+    @include image-container(2048, 1387, 120%, -10%);
+    
+    @include mobile-only {
+      margin-top: 8em;
+    }
   }
 }
