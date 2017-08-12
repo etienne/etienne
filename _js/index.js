@@ -1,6 +1,7 @@
 import Pjax from 'pjax';
 import SmoothScroll from 'smooth-scroll';
 import Player from '@vimeo/player';
+import topbar from 'topbar';
 
 // Home
 
@@ -43,7 +44,12 @@ function domReady() {
 
 // Pjax
 
+document.addEventListener("pjax:send", function() {
+  topbar.show();
+})
+
 document.addEventListener("pjax:success", function() {
+  topbar.hide();
   domReady();
   var slug = document.querySelector('article.content').dataset.bodyClass || 'home';
   document.body.className = slug;
@@ -62,6 +68,12 @@ new Pjax({
   debug: false,
   elements: ['a[href]:not(#cycle-button)'],
   selectors: ['title', 'header#menu', 'article.content', 'section.projects header', 'footer']
+});
+
+// Topbar
+
+topbar.config({
+  barColors: { '0': 'white', '1.0': 'white' },
 });
 
 // Smooth scroll
