@@ -15,6 +15,20 @@ collections:
 
 types: [video, design]
 
+defaults:
+  -
+    scope:
+      path: ""
+      type: "projects-en"
+    values:
+      thumbnail-format: "jpg"
+  -
+    scope:
+      path: ""
+      type: "projects-fr"
+    values:
+      thumbnail-format: "jpg"
+      
 i18n:
   fr:
     all_projects: 'Tous les projets'
