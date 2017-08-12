@@ -1,26 +1,26 @@
 ---
 ---
 
+{%- if page.title -%}
+  {%- assign title = page.title | append: " – " | append: site.title -%}
+{%- else -%}
+  {%- assign title = site.title | append: " – " | append: site.description -%}
+{%- endif -%}
+
 <!DOCTYPE html>
 <html lang="{{ page.language }}">
   <head>
     <meta charset="utf-8">
-    <title>
-      {% if page.title %}
-        {{ page.title | append: " – " | append: site.title }} 
-      {% else %}
-        {{ site.title }} – Design, vidéo, plein d’affaires
-      {% endif %}
-    </title>
+    <title>{{ title }}</title>
     <link rel="stylesheet" href="/css/styles.css" type="text/css" media="screen">
     <meta name="description" content="{{ page.description | default: site.description | strip_html }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="/favicon.png">
   </head>
   <body{% if page.slug %} class="{{ page.slug }}"{% endif %}>
-    {% include header.html %}
-    {{ content }}
-    {% include footer.html %}
+{% include header.html %}
+{{ content }}
+{% include footer.html %}
     <script type="text/javascript" src="/js/bundle.js"></script>
   </body>
 </html>
