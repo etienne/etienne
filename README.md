@@ -1,4 +1,6 @@
-Mon site web.
+# etienne.cool
+
+C’est ça là, c’est mon site web.
 
 ## Installation
 
@@ -21,6 +23,12 @@ cd node_modules/sharp && node-gyp rebuild
 ```
 bundle exec jekyll serve --livereload
 gulp
+```
+
+## Redimensionner et compresser les images
+
+```
+gulp images
 ```
 
 ## Tester les liens
