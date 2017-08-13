@@ -30,6 +30,15 @@ header#menu {
     
     a {
       display: inline-block;
+      
+      span {
+        // https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/C7
+        height: 1px; 
+        width: 1px; 
+        position: absolute; 
+        overflow: hidden; 
+        top: -10px;
+      }
     }
     
     body.home & {
