@@ -40,6 +40,9 @@ function domReady() {
   function initializeVideo() {
     var player = new Player(this, {autoplay: true});
   }
+  
+  // Accessibility (required to move focus after page load)
+  document.querySelector('article.content').tabIndex = -1;
 }
 
 // Pjax
@@ -62,6 +65,9 @@ document.addEventListener("pjax:success", function() {
   
   // We need to manually change the document language
   document.querySelector('html').lang = document.querySelector('article.content').dataset.lang;
+  
+  // Move focus to main article
+  document.querySelector('article.content').focus();
 });
 
 new Pjax({

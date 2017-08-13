@@ -1,6 +1,6 @@
 <article class="{% if include.next != true %}project-item{% endif %} {{ include.project.slug }} {{ page.language }}">
   <a href="{{ include.project.url }}">
-    <img src="/images/{{ include.project.slug }}/thumbnail.{{ include.project.thumbnail-format }}" alt="Aperçu du projet {{ include.project.title }}">
+    <img src="/images/{{ include.project.slug }}/thumbnail.{{ include.project.thumbnail-format }}" alt="">
     {%- if include.next -%}<div class="label">{{ site.i18n[page.language]next_project }}</div>{%- endif -%}
     <h1>{{ include.project.title }}</h1>
   </a>
