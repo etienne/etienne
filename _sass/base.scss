@@ -38,6 +38,10 @@ a {
   &:hover {
     border-bottom-color: white;
   }
+  
+  &:focus {
+    outline-color: rgba(white, 0.4);
+  }
 }
 
 address {
