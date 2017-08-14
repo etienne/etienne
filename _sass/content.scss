@@ -2,6 +2,10 @@ article.content {
   @include clearfix;
   overflow: hidden;
   
+  &:focus {
+    outline: none;
+  }
+  
   section {
     @include container;
     @include clearfix;
