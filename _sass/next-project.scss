@@ -1,4 +1,4 @@
-section.other-projects {
+section.next-project {
   @include container;
   @include clearfix;
   margin-top: 2em;
@@ -55,11 +55,24 @@ section.other-projects {
         width: 50%;
         float: right;
         margin-left: 1em;
+        opacity: 0.88;
+        transition: opacity $transition-speed;
+        -webkit-backface-visibility: hidden;
       }
       
       &:hover {
         h1 {
           border-bottom-color: white;
+        }
+        
+        img {
+          opacity: 1;
+        }
+      }
+      
+      &:focus {
+        img {
+          opacity: 0.5;
         }
       }
     }
