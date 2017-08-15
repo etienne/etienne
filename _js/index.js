@@ -5,18 +5,23 @@ import topbar from 'topbar';
 
 // Home
 
+var storage = window.localStorage;
+
+if (!storage.group) {
+  storage.group = 1;
+}
+
 function domReady() {
   // Randomly pick the intro text
   if (document.querySelector('.cycle')) {
     var totalGroups = parseInt(document.querySelector('.cycle span:last-child').dataset.group);
-    var group = Math.floor(Math.random() * totalGroups) + 1;
-    console.log(totalGroups, group);
     document.querySelectorAll('.cycle span').forEach(function(element) {
       element.classList.add('hide');
     });
-    document.querySelectorAll(".cycle span[data-group='" + group + "']").forEach(function(element) {
+    document.querySelectorAll(".cycle span[data-group='" + storage.group + "']").forEach(function(element) {
       element.classList.remove('hide');
     });
+    storage.group = storage.group >= totalGroups ? 1 : parseInt(storage.group) + 1;
   }
   
   // Videos
