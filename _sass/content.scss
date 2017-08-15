@@ -86,6 +86,8 @@ article.content {
   }
   
   div.text {
+    font-variant-numeric: oldstyle-nums proportional-nums;
+    
     @include desktop {
       padding-left: 50%;
     }

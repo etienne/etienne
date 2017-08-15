@@ -1,6 +1,7 @@
 ul.tags {
   @include no-bullets;
   padding-top: 0.5em;
+  font-variant-numeric: proportional-nums;
   
   li {
     display: inline;
