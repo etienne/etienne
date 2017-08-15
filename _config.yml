@@ -35,7 +35,7 @@ i18n:
     next_project: 'Projet suivant'
     index_url: '/secret'
     index_link: 'Page d’accueil Étienne Després'
-    video: "Vidéo & 3D"
+    video: "Vidéo &amp; 3D"
     design: "Design"
     about: "À propos"
     contact: "Contact"
@@ -46,7 +46,7 @@ i18n:
     next_project: 'Next project'
     index_url: '/en/'
     index_link: 'Étienne Després Home Page'
-    video: "Video & 3D"
+    video: "Video &amp; 3D"
     design: "Design"
     about: "About"
     contact: "Contact"
