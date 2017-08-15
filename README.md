@@ -34,5 +34,5 @@ gulp images
 ## Tester les liens
 
 ```
-rake test
+bundle exec rake test
 ```
