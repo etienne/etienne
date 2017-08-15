@@ -6,22 +6,17 @@ import topbar from 'topbar';
 // Home
 
 function domReady() {
-  // Cycle button
-  var cycleButton = document.getElementById('cycle-button');
-  if (cycleButton) {
-    cycleButton.onclick = function() {
-      var currentGroup = parseInt(this.dataset.currentGroup);
-      var totalGroups = parseInt(document.querySelector('.cycle span:last-child').dataset.group);
-      var nextGroup = currentGroup + 1 > totalGroups ? 1 : currentGroup + 1;
-      document.querySelectorAll('.cycle span').forEach(function(element) {
-        element.classList.add('hide');
-      });
-      document.querySelectorAll(".cycle span[data-group='" + nextGroup + "']").forEach(function(element) {
-        element.classList.remove('hide');
-      });
-      this.dataset.currentGroup = nextGroup;
-      return false;
-    };
+  // Randomly pick the intro text
+  if (document.querySelector('.cycle')) {
+    var totalGroups = parseInt(document.querySelector('.cycle span:last-child').dataset.group);
+    var group = Math.floor(Math.random() * totalGroups) + 1;
+    console.log(totalGroups, group);
+    document.querySelectorAll('.cycle span').forEach(function(element) {
+      element.classList.add('hide');
+    });
+    document.querySelectorAll(".cycle span[data-group='" + group + "']").forEach(function(element) {
+      element.classList.remove('hide');
+    });
   }
   
   // Videos
