@@ -73,7 +73,7 @@ document.addEventListener("pjax:success", function() {
 new Pjax({
   debug: false,
   elements: ['a[href]:not(#cycle-button)'],
-  selectors: ['title', 'header#menu', 'article.content', 'section.projects', 'footer']
+  selectors: ['title', 'meta', 'header#menu', 'article.content', 'section.projects', 'footer']
 });
 
 // Topbar

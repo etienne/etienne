@@ -1,4 +1,4 @@
-{%- if page.type == 'projects-en' or page.type == 'projects-fr' -%}
+{%- if page.layout == 'project' -%}
   {%- assign image = '/images/' | append: page.slug | append: '/thumbnail.' | append: page.thumbnail-format -%}
 {%- else -%}
   {%- assign image = '/images/safia-nolin/thumbnail.jpg' -%}
