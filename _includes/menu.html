@@ -1,7 +1,6 @@
 {%- if page.language == 'fr' -%}
   {%- assign about_url = '/a-propos' -%}
   {%- assign language_url = page.url | prepend: "/en" | replace: 'projets', 'projects' | replace: 'a-propos', 'about' -%}
-  {%- assign language_url = language_url | replace: 'secret', '' -%}
 {%- else -%}
   {%- assign about_url = '/en/about' -%}
   {%- assign language_url = page.url | remove: "/en" | replace: 'projects', 'projets' | replace: 'about', 'a-propos' -%}
