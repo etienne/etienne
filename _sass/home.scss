@@ -1,3 +1,13 @@
+body.home {
+  article.content {
+    div.text {
+      font-variant-numeric: proportional-nums;
+    }
+  }
+}
+.intro {
+}
+
 .cycle {
   span {
     &.hide {
