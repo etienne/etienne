@@ -1,0 +1,22 @@
+{%- if page.type == 'projects-en' or page.type == 'projects-fr' -%}
+  {%- assign image = '/images/' | append: page.slug | append: '/thumbnail.' | append: page.thumbnail-format -%}
+{%- else -%}
+  {%- assign image = '/images/safia-nolin/thumbnail.jpg' -%}
+{%- endif -%}
+
+{%- if page.locale == 'en' -%}
+  {%- assign locale = 'en' -%}
+  {%- assign altlocale = 'fr' -%}
+{%- else -%}
+  {%- assign locale = 'fr' -%}
+  {%- assign altlocale = 'en' -%}
+{%- endif -%}
+
+<meta property="og:title" content="{{ page.title | default: site.title }}" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://etienne.cool{{ page.url }}" />
+<meta property="og:image" content="http://etienne.cool{{ image }}" />
+<meta property="og:description" content="{{ include.description }}" />
+<meta property="og:locale" content="{{ locale }}_CA">
+<meta property="og:locale:alternate" content="{{ altlocale }}_CA" />
+<meta property="og:site_name" content="{{ site.title }}" />

@@ -6,6 +6,7 @@
 {%- else -%}
   {%- assign title = site.title | append: " – " | append: site.description -%}
 {%- endif -%}
+{%- assign description = page.description | default: site.description | strip_html -%}
 
 <!DOCTYPE html>
 <html lang="{{ page.language }}">
@@ -13,9 +14,10 @@
     <meta charset="utf-8">
     <title>{{ title }}</title>
     <link rel="stylesheet" href="/css/styles.css" type="text/css" media="screen">
-    <meta name="description" content="{{ page.description | default: site.description | strip_html }}">
+    <meta name="description" content="{{ description }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="/favicon.png">
+    {% include og.html description=description %}
   </head>
   <body{% if page.slug %} class="{{ page.slug }}"{% endif %}>
 {% include header.html %}
