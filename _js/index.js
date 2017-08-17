@@ -6,6 +6,7 @@ import topbar from 'topbar';
 // Home
 
 var storage = window.localStorage;
+var loadStart = Date.now();
 
 if (!storage.group) {
   storage.group = 1;
@@ -48,6 +49,7 @@ function domReady() {
 // Pjax
 
 document.addEventListener("pjax:send", function() {
+  loadStart = Date.now();
   topbar.show();
 })
 
@@ -70,7 +72,15 @@ document.addEventListener("pjax:success", function() {
   document.querySelector('article.content').focus();
 });
 
+function updatePiwik() {
+  _paq.push(['setCustomUrl', location.pathname]);
+  _paq.push(['setDocumentTitle', document.title]);
+  _paq.push(['setGenerationTimeMs', Date.now() - loadStart]);
+  _paq.push(['trackPageView']);
+}
+
 new Pjax({
+  analytics: updatePiwik,
   debug: false,
   elements: ['a[href]:not(#cycle-button)'],
   selectors: ['title', 'meta', 'header#menu', 'article.content', 'section.projects', 'footer']

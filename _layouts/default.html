@@ -18,6 +18,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="/favicon.png">
     {% include og.html description=description %}
+    {% include piwik.html %}
   </head>
   <body{% if page.slug %} class="{{ page.slug }}"{% endif %}>
 {% include header.html %}
