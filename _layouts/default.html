@@ -4,9 +4,9 @@
 {%- if page.title -%}
   {%- assign title = page.title | append: " – " | append: site.title -%}
 {%- else -%}
-  {%- assign title = site.title | append: " – " | append: site.description -%}
+  {%- assign title = site.title | append: " – " | append: site.i18n[page.language].description -%}
 {%- endif -%}
-{%- assign description = page.description | default: site.description | strip_html -%}
+{%- assign description = page.description | default: site.i18n[page.language].description | strip_html -%}
 
 <!DOCTYPE html>
 <html lang="{{ page.language }}">

@@ -31,6 +31,7 @@ defaults:
       
 i18n:
   fr:
+    description: "Design, vidéo, 3D, plein d’affaires."
     all_projects: 'Tous les projets'
     next_project: 'Projet suivant'
     index_url: '/'
@@ -42,6 +43,7 @@ i18n:
     language: "English"
     preview: "Aperçu"
   en:
+    description: 'Design, video, 3D, all kinds of stuff.'
     all_projects: 'All projects'
     next_project: 'Next project'
     index_url: '/en/'
