@@ -22,7 +22,6 @@ cd node_modules/sharp && node-gyp rebuild
 
 ```
 bundle exec jekyll serve --livereload
-gulp
 ```
 
 ## Redimensionner et compresser les images
