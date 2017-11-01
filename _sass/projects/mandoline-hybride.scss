@@ -1,0 +1,21 @@
+body.mandoline-hybride {
+  background-color: #312A1C;
+	
+  img.poster {
+    display: block;
+    width: 55%;
+    margin: 0 auto 2.5em;
+    
+    @include tablet {
+      width: 33%;
+    }
+    
+    @include desktop {
+      float: left;
+      clear: both;
+      width: 30%;
+      margin-top: 2em;
+      margin-left: 9%;
+    }
+  }
+}
