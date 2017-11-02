@@ -1,0 +1,36 @@
+body.manivelle {
+  background-color: #161718;
+
+  section.hero {
+    @include image-container(2048, 1293);
+		margin-bottom: 0;
+  }
+	
+	section.main {
+		@include desktop {
+			padding-bottom: 10em;
+		}
+	}
+	
+  img.icons {
+    display: block;
+    width: 60%;
+    margin: 5em auto 3em;
+    
+    @include tablet {
+      width: 40%;
+    }
+    
+    @include desktop {
+      width: 410px;
+			position: absolute;
+			top: -165px;
+			left: 0;
+			margin: 0;
+    }
+  }
+	
+	section.illustrations {
+		margin-bottom: 0;
+	}
+}
