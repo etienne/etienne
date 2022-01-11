@@ -154,7 +154,7 @@ article.content {
       }
       
       a {
-        border-bottom: 2px solid rgba(white, 0.3);
+        border-bottom: 2px solid rgba(white, 0.17);
         transition: border $transition-speed;
       
         &:hover {
@@ -167,6 +167,11 @@ article.content {
       @include medium-text;
       @include no-bullets;
     }
+
+    a.externalLink:after {
+      content: "→";
+      margin-left: 0.3em;
+    }
     
     a.button {
       font-weight: bold;
@@ -176,12 +181,6 @@ article.content {
 
       @include tablet {
         padding: 1.5em 2em;
-      }
-      
-      &.play:before {
-        content: "▷";
-        font-size: 140%;
-        margin-right: 1.1em;
       }
       
       &.next:after {

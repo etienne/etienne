@@ -2,7 +2,7 @@ body > footer {
   @include container;
   
   section {
-    padding: 4em 0;
+    padding: 4em 0 0em;
     @include clearfix;
     
     @include tablet {
@@ -16,10 +16,8 @@ body > footer {
       }
       
       p {
-        @include tablet {
-          width: 50%;
-          float: left;
-        }
+        width: 50%;
+        float: left;
       }
     }
   }

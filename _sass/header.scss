@@ -5,8 +5,8 @@ header#menu {
   left: 0;
   right: 0;
   padding: 1em 0;
-  color: white;
   z-index: 2;
+  mix-blend-mode: screen;
   
   @include tablet {
     padding: 1.5em 0;
@@ -24,9 +24,11 @@ header#menu {
     }
 
     &:before {
-      content: '—';
-      color: #8d37ff;
-      margin-right: 0.3em;
+      @include tablet {
+        content: '—';
+        color: $primary-color;
+        margin-right: 0.3em;
+      }
     }
     
     a {

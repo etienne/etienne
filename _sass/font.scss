@@ -1,4 +1,26 @@
 @font-face {
+  font-family: 'UntitledSans';
+  src: url('../fonts/UntitledSans-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UntitledSans';
+  src: url('../fonts/UntitledSans-RegularItalic.otf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'UntitledSans';
+  src: url('../fonts/UntitledSans-Medium.otf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+@font-face {
   font-family: 'Cogito';
   src: url('../fonts/regular.eot');
   src: url('../fonts/regular.eot?#iefix') format('embedded-opentype'),
