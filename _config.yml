@@ -32,10 +32,12 @@ defaults:
 i18n:
   fr:
     description: "Design, vidéo, 3D, plein d’affaires."
+    coolness: "Niveau de coolness non-garanti."
     all_projects: 'Tous les projets'
     next_project: 'Projet suivant'
     index_url: '/'
     index_link: 'Page d’accueil Étienne Després'
+    projects: "Projets"
     video: "Vidéo &amp; 3D"
     design: "Design"
     about: "À propos"
@@ -44,10 +46,12 @@ i18n:
     preview: "Aperçu"
   en:
     description: 'Design, video, 3D, all kinds of stuff.'
+    coolness: "Coolness level not guaranteed."
     all_projects: 'All projects'
     next_project: 'Next project'
     index_url: '/en/'
     index_link: 'Étienne Després Home Page'
+    projects: "Projects"
     video: "Video &amp; 3D"
     design: "Design"
     about: "About"

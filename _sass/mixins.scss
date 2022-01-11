@@ -5,8 +5,8 @@
   line-height: 16px;
 
   @include tablet {
-    font-size: 14px;
-    line-height: 19px;
+    font-size: 16px;
+    line-height: 23px;
   }
 }
 
@@ -15,8 +15,8 @@
   line-height: 19px;
 
   @include tablet {
-    font-size: 16px;
-    line-height: 23px;
+    font-size: 19px;
+    line-height: 27px;
   }
 }
 
@@ -25,8 +25,8 @@
   line-height: 24px;
 
   @include tablet {
-    font-size: 23px;
-    line-height: 32px;
+    font-size: 28px;
+    line-height: 36px;
   }
 }
 
@@ -35,8 +35,8 @@
   line-height: 37px;
 
   @include tablet {
-    font-size: 46px;
-    line-height: 58px;
+    font-size: 45px;
+    line-height: 54px;
   }
 }
 
@@ -62,19 +62,14 @@
 
 @mixin container {
   width: 92%;
-  max-width: 1152px;
   margin: 0 auto;
 }
 
 @mixin section-margins {
   margin-bottom: 2em;
 
-  @include tablet {
-    margin-bottom: 3em;
-  }
-
   @include desktop {
-    margin-bottom: 4em;
+    margin-bottom: 3em;
   }
 }
 

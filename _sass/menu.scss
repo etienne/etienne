@@ -1,9 +1,5 @@
 header nav {
   float: right;
-
-  @include tablet {
-    font-weight: bold;
-  }
   
   @include desktop {
     float: left;

@@ -1,11 +1,5 @@
 section.projects {
   @include clearfix;
-  
-  body.home & {
-    @include tablet {
-      padding-top: 2em;
-    }
-  }
 
   body:not(.home) & {
     padding-top: 2em;

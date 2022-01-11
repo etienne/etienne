@@ -8,10 +8,6 @@ body > footer {
     @include tablet {
       padding: 6em 0;
     }
-
-    @include desktop {
-      padding: 10em 0;
-    }
     
     address {
       @include desktop {
@@ -24,10 +20,6 @@ body > footer {
           width: 50%;
           float: left;
         }
-      }
-      
-      a {
-        font-weight: bold;
       }
     }
   }
