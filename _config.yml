@@ -2,7 +2,7 @@ title: Étienne Després
 author: Étienne Després
 description: "Design, vidéo, 3D, plein d’affaires."
 permalink: /:title
-host: 0.0.0.0
+host: 127.0.0.1
 exclude: ['node_modules', 'yarn.lock', 'webpack.config.js', 'package.json']
 
 collections:
