@@ -33,6 +33,7 @@ section.next-project {
     
     @include desktop {
       @include medium-text;
+      width: 1/2 * 100%;
     }
     
     h1 {

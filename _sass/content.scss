@@ -89,12 +89,15 @@ article.content {
     font-variant-numeric: oldstyle-nums proportional-nums;
     
     @include desktop {
-      padding-left: 50%;
+      padding-left: 1/2 * 100%;
     }
     
     h1 {
       @include big-text;
       margin: 0;
+      font-weight: normal;
+      color: $primary-color;
+      mix-blend-mode: screen;
     }
     
     h2 {

@@ -20,7 +20,7 @@ header#menu {
     float: left;
     
     @include desktop {
-      width: 50%;
+      width: 1/2 * 100%;
     }
 
     &:before {
