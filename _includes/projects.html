@@ -6,13 +6,11 @@
 
 <section class="projects" id="{{ type }}">
   <ul>
-    {%- for type in site.types -%}
-      {%- assign sorted_projects = projects | sort: 'date' | reverse -%}
-      {%- for project in sorted_projects -%}
-        {%- if project.type == type and project.published -%}
-          <li>{%- include project-item.html project=project -%}</li>
-        {%- endif -%}
-      {%- endfor -%}
+    {%- assign sorted_projects = projects | sort: 'order' | reverse -%}
+    {%- for project in sorted_projects -%}
+      {%- if project.published -%}
+        <li>{%- include project-item.html project=project -%}</li>
+      {%- endif -%}
     {%- endfor -%}
   </ul>
 </section>

@@ -23,8 +23,6 @@ collections:
     output: true
     permalink: /projets/:title
 
-types: [video, design]
-
 defaults:
   -
     scope:
