@@ -5,31 +5,3 @@ body.home {
     }
   }
 }
-
-.cycle {
-  span {
-    &.hide {
-      display: none;
-    }
-  }
-}
-
-span.cool:after {
-  content: '*';
-  position: relative;
-  top: -0.1em;
-  font-size: 85%;
-  color: rgba(white, 0.3);
-}
-
-p#footnote {
-  @include small-text;
-  position: relative;
-  top: -0.8em;
-  color: rgba(white, 0.6);
-
-  &:before {
-    content: '*';
-    margin-right: 0.2em;
-  }
-}

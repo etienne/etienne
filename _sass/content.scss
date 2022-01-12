@@ -76,7 +76,7 @@ article.content {
     a {
       transition: border-color $transition-speed, color $transition-speed;
       color: rgba(white, 0.5);
-      border-bottom: 2px solid rgba(white, 0.15);
+      border-bottom: 1px solid rgba(white, 0.2);
       
       &:hover {
         color: white;
@@ -157,7 +157,7 @@ article.content {
       }
       
       a {
-        border-bottom: 2px solid rgba(white, 0.17);
+        border-bottom: 1px solid rgba(white, 0.2);
         transition: border $transition-speed;
       
         &:hover {
@@ -172,6 +172,7 @@ article.content {
     }
 
     a.externalLink:after {
+      position: absolute;
       content: "→";
       margin-left: 0.3em;
     }
