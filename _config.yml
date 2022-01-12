@@ -3,7 +3,17 @@ author: Étienne Després
 description: "Design, vidéo, 3D, plein d’affaires."
 permalink: /:title
 host: 127.0.0.1
-exclude: ['node_modules', 'yarn.lock', 'webpack.config.js', 'package.json']
+exclude:
+  - CNAME
+  - Gemfile
+  - gulpfile.js
+  - node_modules
+  - package-lock.json
+  - package.json
+  - Rakefile
+  - README.md
+  - webpack.config.js
+  - yarn.lock
 
 collections:
   projects-en:
