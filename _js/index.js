@@ -89,7 +89,7 @@ new Pjax({
 // Topbar
 
 topbar.config({
-  barColors: { '0': 'white', '1.0': 'white' },
+  barColors: { '0': '#8325ff', '1.0': '#8325ff' },
 });
 
 // Smooth scroll

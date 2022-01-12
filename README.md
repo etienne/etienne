@@ -21,7 +21,13 @@ cd node_modules/sharp && node-gyp rebuild
 ## Démarrer le serveur
 
 ```
-bundle exec jekyll serve --livereload
+bundle exec jekyll serve
+```
+
+## Générer le JavaScript
+
+```
+npx webpack --config webpack.config.js
 ```
 
 ## Redimensionner et compresser les images
