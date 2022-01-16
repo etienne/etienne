@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs/><symbol id="plyr-play" viewBox="0 0 32 32">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>play</title>
+    <desc>Created with Sketch.</desc>
+    <g id="play" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M16.5,7.33264832 L8.74178623,26.5 L24.2582138,26.5 L16.5,7.33264832 Z" id="play-copy" stroke="#FFFFFF" transform="translate(16.500000, 16.500000) rotate(-270.000000) translate(-16.500000, -16.500000) "/>
+    </g>
+</symbol><symbol id="plyr-pause" viewBox="0 0 32 32">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>pause</title>
+    <desc>Created with Sketch.</desc>
+    <g id="pause" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g transform="translate(11.000000, 7.000000)" stroke="#FFFFFF">
+            <line x1="10.5" y1="0.527777778" x2="10.5" y2="18.4722222" id="Line-3-Copy"/>
+            <line x1="0.5" y1="0.527777778" x2="0.5" y2="18.4722222" id="Line-3-Copy-2"/>
+        </g>
+    </g>
+</symbol><symbol id="plyr-enter-fullscreen" viewBox="0 0 32 32">
+    <title>enter-fullscreen</title>
+    <g id="enter-fullscreen" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polyline id="Path-4" stroke="#FFFFFF" points="14 26.5 5.5 26.5 5.5 18"/>
+        <polyline id="Path-4-Copy" stroke="#FFFFFF" points="26.5 14 26.5 5.5 18 5.5"/>
+        <line x1="5.5" y1="26.5" x2="13.5" y2="18.5" id="Line-3" stroke="#FFFFFF"/>
+        <line x1="18.5" y1="13.5" x2="26.5" y2="5.5" id="Line-3-Copy" stroke="#FFFFFF"/>
+    </g>
+</symbol><symbol id="plyr-exit-fullscreen" viewBox="0 0 32 32">
+    <title>exit-fullscreen copy</title>
+    <g id="exit-fullscreen-copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polyline id="Path-4" stroke="#FFFFFF" points="27 13.5 18.5 13.5 18.5 5"/>
+        <polyline id="Path-4-Copy" stroke="#FFFFFF" points="13.5 27 13.5 18.5 5 18.5"/>
+        <line x1="18.5" y1="13.5" x2="26.5" y2="5.5" id="Line-3" stroke="#FFFFFF"/>
+        <line x1="5.5" y1="26.5" x2="13.5" y2="18.5" id="Line-3-Copy" stroke="#FFFFFF"/>
+    </g>
+</symbol><symbol id="plyr-volume" viewBox="0 0 32 32">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>unmute</title>
+    <desc>Created with Sketch.</desc>
+    <g id="unmute" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="Path" stroke="#FFFFFF" points="11.57 19.6097561 5.5 19.6097561 5.5 12.3902439 11.5666667 12.3902439 18.5 7 18.5 25"/>
+    </g>
+</symbol><symbol id="plyr-muted" viewBox="0 0 32 32">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>mute</title>
+    <desc>Created with Sketch.</desc>
+    <g id="mute" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-2" transform="translate(3.000000, 6.000000)" stroke="#FFFFFF">
+            <path d="M15.5,12 L15.5,19 L10.8696163,15.400159 M5,13.6097561 L2.5,13.6097561 L2.5,6.3902439 L8.56666667,6.3902439 L15.5,1 L15.5,5" id="Shape"/>
+            <line x1="0.5" y1="20.5" x2="25.5" y2="0.5" id="Line-2-Copy" stroke-linecap="square"/>
+        </g>
+    </g>
+</symbol></svg>

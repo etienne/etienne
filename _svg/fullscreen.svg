@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>fullscreen</title>
+    <g id="fullscreen" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polyline id="Path-4" stroke="#FFFFFF" points="14 26.5 5.5 26.5 5.5 18"></polyline>
+        <polyline id="Path-4-Copy" stroke="#FFFFFF" points="26.5 14 26.5 5.5 18 5.5"></polyline>
+        <line x1="5.5" y1="26.5" x2="13.5" y2="18.5" id="Line-3" stroke="#FFFFFF"></line>
+        <line x1="18.5" y1="13.5" x2="26.5" y2="5.5" id="Line-3-Copy" stroke="#FFFFFF"></line>
+    </g>
+</svg>

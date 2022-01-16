@@ -1,52 +1,47 @@
-div.video {
+div#video {
   position: relative;
   cursor: pointer;
+
+  &.plyr--fullscreen-enabled {
+    display: block;
+  }
   
   &:hover {
-    img {
+    iframe {
       opacity: 1;
     }
 
-    &:not([data-vimeo-initialized]) div.play {
+    &:not(.plyr--playing) div.play {
       border-color: white;
     }
-  }
-  
-  img {
-    transition: opacity $transition-speed;
-    -webkit-backface-visibility: hidden;
-    opacity: 0.75;
   }
   
   div.play {
     display: none;
   }
   
-  &:not([data-vimeo-initialized]) div.play {
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    padding: 1rem 1rem 1rem 3rem;
-    -webkit-backface-visibility: hidden;
-    
-    &:after {
-      box-sizing: border-box;
-      content: "▷";
-      font-size: 14px;
-      transform: scaleY(0.7);
-      font-weight: bold;
+  &:not(.plyr--playing) {
+    div.play {
+      transition: border-color $transition-speed;
+      display: flex;
       position: absolute;
-      height: 100%;
-      top: 0;
-      left: 0;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: 1px solid rgba(255, 255, 255, 0.3);
       padding: 1rem;
-      
-      @include tablet {
-        font-size: 22px;
+      -webkit-backface-visibility: hidden;
+
+      svg {
+        width: 32px;
+        height: 32px;
+        margin-right: 0.6rem;
       }
+    }
+
+    iframe {
+      transition: opacity $transition-speed;
+      opacity: 0.75;
     }
   }
   

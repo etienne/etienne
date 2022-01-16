@@ -1,7 +1,20 @@
-{% assign alt = include.title | append: ' – ' | append: site.i18n[page.language]preview %}
-<section>
-  <div class="video" data-vimeo-id="{{ include.id }}" data-vimeo-defer>
-    {% include image.html name=include.poster alt=alt %}
-    <div class="play">{{ include.title }}</div>
+<section class="wide">
+  <div class="plyr__video-embed" id="video" {% if include.poster %}data-poster="/images/{{ page.slug }}/{{ include.poster }}"{% endif %}>
+    <iframe
+      {% if include.source == 'youtube' %}
+      src="https://www.youtube.com/embed/{{ include.id }}?iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
+      {% else %}
+      src="https://player.vimeo.com/video/{{ include.id }}?loop=false&amp;byline=false&amp;portrait=false&amp;title=false&amp;speed=true&amp;transparent=0&amp;gesture=media"
+      {% endif %}
+      allowfullscreen
+      allowtransparency
+      allow="autoplay"
+    ></iframe>
+    <div class="play">
+      <svg aria-hidden="true" focusable="false">
+        <use xlink:href="/assets/plyr-sprites.svg#plyr-play"></use>
+      </svg>
+      {{ include.title }}
+    </div>
   </div>
 </section>
