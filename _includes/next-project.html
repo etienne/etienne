@@ -4,22 +4,20 @@
   {% assign projects = site.projects-en %}
 {% endif %}
 
-{% for type in site.types %}
-  {% assign sorted_projects = projects | sort: 'date' | reverse %}
-  {% for project in sorted_projects %}
-    {% if project.type == type and project.published %}
-      {% if first_project == nil %}
-        {% assign first_project = project %}
-      {% endif %}
-      {% if next_project_flag %}
-        {% assign next_project = project %}
-        {% assign next_project_flag = false %}
-      {% endif %}
-      {% if project.slug == page.slug %}
-        {% assign next_project_flag = true %}
-      {% endif %}
+{% assign sorted_projects = projects | sort: 'order' | reverse %}
+{% for project in sorted_projects %}
+  {% if project.type == type and project.published %}
+    {% if first_project == nil %}
+      {% assign first_project = project %}
     {% endif %}
-  {% endfor %}
+    {% if next_project_flag %}
+      {% assign next_project = project %}
+      {% assign next_project_flag = false %}
+    {% endif %}
+    {% if project.slug == page.slug %}
+      {% assign next_project_flag = true %}
+    {% endif %}
+  {% endif %}
 {% endfor %}
 
 {% if next_project == nil %}
