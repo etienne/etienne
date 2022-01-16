@@ -5,7 +5,7 @@ body.safia-nolin {
     @include image-container(2048, 858);
   }
   
-  div.breakdown {
+  .plyr__video-embed {
     padding-bottom: 100% * 858/2048;
   }
 }

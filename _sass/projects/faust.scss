@@ -1,7 +1,11 @@
 body.faust {
   background-color: #0d0d0a;
   
-  section.wide {
+  section.hero {
     @include image-container(1440, 1147);
+  }
+
+  .plyr__video-embed {
+    padding-bottom: 100% * 1010/1920;
   }
 }
