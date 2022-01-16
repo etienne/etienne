@@ -7,15 +7,7 @@ C’est ça là, c’est mon site web.
 ```
 gem install bundler
 bundle
-brew install homebrew/science/vips --with-webp --with-graphicsmagick
 npm install
-```
-
-Peut-être nécessaire:
-
-```
-npm install -g node-gyp
-cd node_modules/sharp && node-gyp rebuild
 ```
 
 ## Démarrer le serveur
@@ -27,13 +19,19 @@ bundle exec jekyll serve
 ## Générer le JavaScript
 
 ```
-npx webpack --config webpack.config.js
+npx webpack watch --config webpack.config.js
 ```
 
 ## Redimensionner et compresser les images
 
 ```
-gulp images
+npm run gulp
+```
+
+## Générer le fichier SVG pour Plyr
+
+```
+npm run plyr-sprites
 ```
 
 ## Tester les liens

@@ -6,13 +6,21 @@
   "repository": "https://github.com/etienne/etienne.git",
   "author": "Étienne Després <etienne@pochour.com>",
   "license": "MIT",
+  "scripts": {
+    "gulp": "gulp",
+    "plyr-sprites": "node _js/plyr-sprites.js"
+  },
   "devDependencies": {
+    "gulp": "4.0.2",
+    "gulp-cache": "1.1.3",
+    "gulp-squoosh": "0.9.0",
+    "svgstore": "3.0.1",
     "webpack": "^5.66.0",
     "webpack-cli": "4.9.1"
   },
   "dependencies": {
-    "@vimeo/player": "2.16.0",
     "pjax": "0.2.8",
+    "plyr": "3.6.12",
     "smooth-scroll": "16.1.3",
     "topbar": "1.0.1"
   }
