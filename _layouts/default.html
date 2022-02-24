@@ -13,7 +13,7 @@
   <head>
     <meta charset="utf-8">
     <title>{{ title }}</title>
-    <link rel="stylesheet" href="/css/styles.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="/css/styles.css?v={{ site.time | date: '%s' }}" type="text/css" media="screen">
     <meta name="description" content="{{ description }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="/favicon.png">
@@ -23,6 +23,6 @@
 {% include header.html %}
 {{ content }}
 {% include footer.html %}
-    <script type="text/javascript" src="/js/bundle.js"></script>
+    <script type="text/javascript" src="/js/bundle.js?v={{ site.time | date: '%s' }}"></script>
   </body>
 </html>
