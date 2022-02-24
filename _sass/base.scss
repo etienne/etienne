@@ -32,6 +32,7 @@ p {
 a {
   color: $text-color;
   text-decoration: none;
+  padding-bottom: 1px;
   border-bottom: 2px solid transparent;
   transition: border $transition-speed;
   

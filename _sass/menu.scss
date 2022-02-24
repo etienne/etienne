@@ -14,11 +14,11 @@ header nav {
       margin-left: 14px;
       
       @include tablet {
-        margin-left: 22px;
+        margin-left: 20px;
       }
       
       @include desktop {
-        margin-left: 32px;
+        margin-left: 28px;
       }
       
       &:first-child {

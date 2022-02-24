@@ -29,13 +29,23 @@ div#video {
       left: 50%;
       transform: translate(-50%, -50%);
       border: 1px solid rgba(255, 255, 255, 0.3);
-      padding: 1rem;
+      padding: 0.5rem;
       -webkit-backface-visibility: hidden;
 
+      @include tablet {
+        padding: 1rem;
+      }
+
       svg {
-        width: 32px;
-        height: 32px;
-        margin-right: 0.6rem;
+        width: 24px;
+        height: 24px;
+        margin-right: 0.4rem;
+
+        @include tablet {
+          width: 32px;
+          height: 32px;
+          margin-right: 0.6rem;
+        }
       }
     }
 
