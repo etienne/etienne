@@ -1,0 +1,17 @@
+body.furies {
+  background-color: #160064;
+
+  section.hero {
+    @include image-container(3000, 2081, 140%, -21%);
+    background-color: #210180;
+    padding-top: 11em;
+
+    @include desktop {
+      padding-top: 0em;
+    }
+  }
+
+  section.variantes {
+    margin-bottom: 0;
+  }
+}

@@ -3,9 +3,6 @@ body.grand-bruit {
   
   section.hero {
     @include image-container(2048, 840, 140%, -24%);
-    margin: 24em 0 2em;
-    
-    @include tablet {
-    }
+    margin: 20em 0 2em;
   }
 }

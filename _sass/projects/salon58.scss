@@ -1,0 +1,11 @@
+body.salon58 {
+  background-color: #09332b;
+
+  section.hero {
+    @include image-container(2048, 1366, 170%, -20%);
+  }
+
+  section.logo, section.cartes {
+    margin-bottom: 0;
+  }
+}

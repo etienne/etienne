@@ -1,0 +1,17 @@
+body.memory {
+  background-color: #0b1616;
+
+  section.hero {
+    @include image-container(2048, 2757, 100%, 0);
+    background-color: black;
+    padding-top: 10em;
+
+    @include tablet {
+      padding-top: 2em;
+    }
+
+    @include desktop {
+      padding-top: 0;
+    }
+  }
+}
