@@ -6,7 +6,6 @@ host: 127.0.0.1
 exclude:
   - CNAME
   - Gemfile
-  - gulpfile.js
   - node_modules
   - package-lock.json
   - package.json

@@ -25,7 +25,7 @@ npx webpack watch --config webpack.config.js
 ## Redimensionner et compresser les images
 
 ```
-npm run gulp
+npm run process-images
 ```
 
 ## Générer le fichier SVG pour Plyr
