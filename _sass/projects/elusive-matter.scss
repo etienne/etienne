@@ -1,0 +1,11 @@
+body.elusive-matter {
+  background-color: #0a1011;
+  
+  section.hero {
+    @include image-container(2048, 1387, 250%, -72%);
+    
+    @include mobile-only {
+      margin-top: 0;
+    }
+  }
+}
