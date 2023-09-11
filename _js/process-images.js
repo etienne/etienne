@@ -22,7 +22,7 @@ async function processImages() {
         .toFile(targetPng);
       await sharp(e)
         .resize({ width: isThumb ? 700 : null })
-        .jpeg({ mozjpeg: true, quality: 85, chromaSubsampling: '4:4:4' })
+        .jpeg({ mozjpeg: true, quality: 80, chromaSubsampling: '4:4:4' })
         .toFile(targetJpeg);
     } catch (error) {
       console.error(error);
