@@ -133,3 +133,27 @@
     @content
   }
 }
+
+@mixin light-mode {
+  color: $text-color-light-mode;
+
+  .topbar {
+    mix-blend-mode: normal;
+  }
+
+  header#menu {
+    mix-blend-mode: normal;
+  }
+
+  article.content {
+    div.text {
+      h1 {
+        mix-blend-mode: normal;
+      }
+    }
+  }
+  
+  a {
+    color: $text-color-light-mode;
+  }
+}

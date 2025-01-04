@@ -1,0 +1,11 @@
+body.regards-hybrides {
+  background-color: #575757;
+  
+  section.hero {
+    @include image-container(2048, 858);
+  }
+  
+  .plyr__video-embed {
+    padding-bottom: 100% * 858/2048;
+  }
+}
