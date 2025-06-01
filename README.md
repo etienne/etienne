@@ -13,7 +13,7 @@ npm install
 ## Démarrer le serveur
 
 ```
-bundle exec jekyll serve
+bundle exec jekyll serve --livereload
 ```
 
 ## Générer le JavaScript
