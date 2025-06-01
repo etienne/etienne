@@ -13,10 +13,16 @@
 @mixin normal-text {
   font-size: 13px;
   line-height: 18px;
+  letter-spacing: -0.01em;
 
   @include tablet {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 15px;
+    line-height: 21px;
+  }
+
+  @include desktop {
+    font-size: 17px;
+    line-height: 23px;
   }
 }
 
@@ -32,9 +38,15 @@
 
 @mixin big-text {
   font-size: 28px;
-  line-height: 34px;
+  line-height: 32px;
+  letter-spacing: -0.02em;
 
   @include tablet {
+    font-size: 34px;
+    line-height: 40px;
+  }
+
+  @include desktop {
     font-size: 45px;
     line-height: 54px;
   }
@@ -42,35 +54,29 @@
 
 // Layout
 
-@mixin clearfix {
-  &:before, &:after {
-    content: " ";
-    display: table;
-  }
-
-  &:after {
-    clear: both;
-  }
-}
-
-@mixin no-bullets {
-  list-style: none;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding: 0;
-}
-
-@mixin container {
-  width: 92%;
-  margin: 0 auto;
+@mixin grid {
+  display: grid;
 
   @include tablet {
-    width: 94%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@mixin padding {
+  padding: 0.7rem 0.9rem;
+
+  @include tablet {
+    padding: 0.9rem 1.2rem;
   }
 
-  @include desktop-large() {
-    width: 96%;
+  @include desktop {
+    padding: 1.3rem 1.6rem;
   }
+
+  @include desktop-large {
+    padding: 1.4rem 1.7rem;
+  }
+
 }
 
 @mixin section-margins {
@@ -135,25 +141,6 @@
 }
 
 @mixin light-mode {
-  color: $text-color-light-mode;
-
-  .topbar {
-    mix-blend-mode: normal;
-  }
-
-  header#menu {
-    mix-blend-mode: normal;
-  }
-
-  article.content {
-    div.text {
-      h1 {
-        mix-blend-mode: normal;
-      }
-    }
-  }
-  
-  a {
-    color: $text-color-light-mode;
-  }
+  --text-color: #222;
+  --background-color: #fff;
 }

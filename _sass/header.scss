@@ -1,38 +1,51 @@
 header#menu {
-  @include container;
-  @include clearfix;
+  @include grid;
+  @include padding;
   position: absolute;
   left: 0;
   right: 0;
-  padding: 1em 0;
   z-index: 2;
   mix-blend-mode: screen;
-  
-  @include tablet {
-    padding: 1.5em 0;
+
+  @include mobile-only {
+    display: flex;
+    justify-content: space-between;
   }
 
-  @include desktop {
-    padding: 2em 0;
+  a {
+    text-decoration-color: transparent;
   }
 
-  h1 {
-    float: left;
-    
-    @include desktop {
-      width: 1/2 * 100%;
-    }
+  > div a {
+    font-weight: bold;
+  }
 
-    &:before {
+  nav {
+    ul {
+      display: flex;
+      gap: 14px;
+
       @include tablet {
-        content: '—';
-        color: $primary-color;
-        margin-right: 0.3em;
+        gap: 20px;
       }
-    }
-    
-    a {
-      display: inline-block;
+
+      @include desktop {
+        gap: 26px;
+      }
+      
+      li {
+        &.language {
+          opacity: 0.5;
+        }
+      }
+      
+      a {
+        span.expanded-word {
+          @include mobile-only {
+            display: none;
+          }
+        }
+      }
     }
   }
 }

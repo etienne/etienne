@@ -25,5 +25,13 @@
 {% endif %}
 
 <section class="next-project">
-  {% include project-item.html project=next_project next=true %}
+  <article>
+    <a href="{{ next_project.url }}">
+      <div class="label">
+        <h2>{{ site.i18n[page.language]next_project }}</h2>
+        <h3>{{ next_project.title }}</h3>
+      </div>
+      <img src="/images/{{ next_project.slug }}/thumbnail.{{ next_project.thumbnail-format }}" alt="">
+    </a>
+  </article>
 </section>

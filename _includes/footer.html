@@ -1,20 +1,30 @@
 {%- include projects.html -%}
 
 <footer id="contact">
-  <section>
-    <address>
-      <p>
-        <a href="tel:+15148865430">+1 514 886 5430</a><br>
-        {%- if page.language == 'fr' -%}
-          <a href="mailto:salut@etienne.cool">salut@etienne.cool</a>
-        {%- else -%}
-          <a href="mailto:hello@etienne.cool">hello@etienne.cool</a>
-        {%- endif -%}
-      </p>
-      <p>
-        Montréal (Québec)<br>
-        Canada
-      </p>
-    </address>
-  </section>
+  <address>
+    <p>
+      Étienne Després<br>
+      {%- if page.language == 'fr' -%}
+        <a href="mailto:salut@etienne.cool">salut@etienne.cool</a><br>
+      {%- else -%}
+        <a href="mailto:hello@etienne.cool">hello@etienne.cool</a><br>
+      {%- endif -%}
+      <br>
+    </p>
+    <p>
+      Tiohtiá:ke – Mooniyang<br>
+      Montréal
+    </p>
+    <p class="footnote">
+      {%- if page.language == 'fr' -%}
+        Coolitude non garantie
+      {%- else -%}
+        Coolness not guaranteed
+      {%- endif -%}
+    </p>
+    <p class="footnote">
+      © {{ 'now' | date: "%Y" }} Étienne Després
+    </p>
+
+  </address>
 </footer>

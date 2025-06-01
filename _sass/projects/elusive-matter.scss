@@ -1,5 +1,6 @@
 body.elusive-matter {
-  background-color: #0a1011;
+  --background-color: #0a1011;
+  --accent-color: #629e96;
   
   section.hero {
     @include image-container(2048, 1387, 250%, -72%);

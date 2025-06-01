@@ -1,5 +1,5 @@
 body.grand-bruit {
-  background-color: #131313;
+  --background-color: #131313;
   
   section.hero {
     @include image-container(2048, 840, 140%, -24%);

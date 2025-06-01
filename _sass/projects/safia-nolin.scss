@@ -1,5 +1,6 @@
 body.safia-nolin {
-  background-color: #161a17;
+  --background-color: #161a17;
+  --accent-color: #887f4e;
   
   section.hero {
     @include image-container(2048, 858);

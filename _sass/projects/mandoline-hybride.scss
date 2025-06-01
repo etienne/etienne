@@ -1,6 +1,7 @@
 body.mandoline-hybride {
-  background-color: #312A1C;
-	
+  --background-color: #312A1C;
+  --accent-color: #FDD600;
+  	
   section.wide {
     @include image-container(2880, 1699, 120%, -12%);
   }

@@ -1,6 +1,4 @@
 section.projects {
-  @include clearfix;
-
   body:not(.home) & {
     padding-top: 2em;
 
@@ -13,48 +11,7 @@ section.projects {
     display: none;
   }
   
-  & + section.projects {
-    padding-top: 2em;
-
-    @include tablet {
-      padding-top: 5.5em;
-    }
-
-    @include desktop {
-      padding-top: 8em;
-    }
-  }
-
-  header {
-    @include container;
-
-    @include tablet {
-      padding-top: 2em;
-    }
-
-    h1 {
-      @include medium-text;
-      margin: 0.8em 0;
-      
-      @include tablet {
-        @include normal-text;
-        position: absolute;
-        z-index: 1;
-        float: left;
-        margin: -2.5em 0 0;
-        padding: 1.45em 1.7em;
-        border: 2px solid white;
-      }
-      
-      @include desktop {
-        @include medium-text;
-        margin-top: -2.45em;
-      }
-    }
-  }
-  
   ul {
-    @include no-bullets;
-    clear: both;
+    @include grid;
   }
 }

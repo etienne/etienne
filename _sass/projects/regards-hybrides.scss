@@ -1,5 +1,5 @@
 body.regards-hybrides {
-  background-color: #575757;
+  --background-color: #575757;
   
   section.hero {
     @include image-container(2048, 858);

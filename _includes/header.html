@@ -1,8 +1,32 @@
+{%- if page.language == 'fr' -%}
+  {%- assign about_url = '/a-propos' -%}
+  {%- assign language_url = page.url | prepend: "/en" | replace: 'projets', 'projects' | replace: 'a-propos', 'about' -%}
+{%- else -%}
+  {%- assign about_url = '/en/about' -%}
+  {%- assign language_url = page.url | remove: "/en" | replace: 'projects', 'projets' | replace: 'about', 'a-propos' -%}
+{%- endif -%}
+{%- assign language_label = site.i18n[page.language].language -%}
+
 <header id="menu">
-  <h1>
+  <div>
     <a href="{{ site.i18n[page.language]index_url }}" aria-label="{{ site.i18n[page.language]index_link }}">
       Étienne Després
     </a>
-  </h1>
-  {% include menu.html %}
+  </div>
+  <nav>
+    <ul>
+      <li class="hide-mobile">
+        <a href="{{ site.i18n[page.language]index_url }}">
+          {{ site.i18n[page.language]projects }}
+        </a>
+      </li>
+      <li><a href="{{ about_url }}">{{ site.i18n[page.language]about }}</a></li>
+      <li><a href="#contact">{{ site.i18n[page.language]contact }}</a></li>
+      <li class="language">
+        <a href="{{ language_url }}">
+          {{ language_label | slice: 0, 2 }}<span class="expanded-word">{{ language_label | slice: 2, 99 }}</span>
+        </a>
+      </li>
+    </ul>  
+  </nav>
 </header>

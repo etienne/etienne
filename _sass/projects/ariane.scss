@@ -1,5 +1,5 @@
 body.ariane {
-  background-color: #051017;
+  --background-color: #051017;
   
   section.hero {
     @include image-container(1920, 1300, 230%, -55%);

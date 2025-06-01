@@ -1,5 +1,5 @@
 body.manivelle {
-  background-color: #161718;
+  --background-color: #161718;
 
   section.hero {
     @include image-container(2048, 1293);

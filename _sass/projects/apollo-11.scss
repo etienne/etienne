@@ -1,5 +1,6 @@
 body.apollo-11 {
-  background: #042431 url(../images/apollo-11/stars.png) repeat-x;
+  --background-color: #042431;
+  background: url(../images/apollo-11/stars.png) repeat-x;
   background-size: 300%;
   
   @include tablet {
@@ -20,8 +21,6 @@ body.apollo-11 {
     }
     
     @include desktop {
-      float: left;
-      clear: both;
       width: 30%;
       margin-top: 2em;
       margin-left: 9%;

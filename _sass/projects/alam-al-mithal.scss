@@ -1,5 +1,6 @@
 body.alam-al-mithal {
-  background-color: #0d0d0a;
+  --background-color: #0d0d0a;
+  --accent-color: #8da793;
   
   section.hero {
     @include image-container(2048, 1715, 140%, -30%);

@@ -1,5 +1,6 @@
 body.memory {
-  background-color: #0b1616;
+  --background-color: #0b1616;
+  --accent-color: #00c1d6;
 
   section.hero {
     @include image-container(2048, 2757, 100%, 0);

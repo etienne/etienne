@@ -1,5 +1,4 @@
 article.content {
-  @include clearfix;
   overflow: hidden;
   
   &:focus {
@@ -7,14 +6,17 @@ article.content {
   }
   
   section {
-    @include container;
-    @include clearfix;
+    @include grid;
+    @include padding;
     @include section-margins;
     position: relative;
     
-    &.wide, &.wrapper {
-      width: 100%;
-      max-width: 100%;
+    &.wide {
+      padding: 0;
+
+      & > * {
+        grid-column: 1 / -1;
+      }
     }
     
     &.superimposed {
@@ -27,7 +29,6 @@ article.content {
     &.side-by-side {
       @include tablet {
         img {
-          float: left;
           width: 50%;
         }
         
@@ -36,7 +37,6 @@ article.content {
             width: 49%;
             
             & + img {
-              float: right;
             }
           }
         }
@@ -66,10 +66,9 @@ article.content {
   }
   
   p.credit {
-    @include container;
+    @include grid;
     @include small-text;
     text-align: right;
-    clear: both;
     color: rgba(white, 0.5);
     padding-top: 1em;
     
@@ -80,54 +79,23 @@ article.content {
     a {
       transition: border-color $transition-speed, color $transition-speed;
       color: rgba(white, 0.5);
-      border-bottom: 1px solid rgba(white, 0.2);
+      text-decoration-color: rgba(var(--text-color), 0.2);
       
       &:hover {
         color: white;
-        border-bottom-color: white;
       }
     }
   }
   
   div.text {
+    grid-column-start: 2;
     font-variant-numeric: oldstyle-nums proportional-nums;
-    
-    @include desktop {
-      padding-left: 1/2 * 100%;
-    }
     
     h1 {
       @include big-text;
       margin: 0;
       font-weight: normal;
-      color: $primary-color;
-      mix-blend-mode: screen;
-    }
-    
-    h2 {
-      @include medium-text;
-      display: inline-block;
-      padding-bottom: 0.3em;
-      margin-top: 1em;
-      margin-bottom: 1em;
-      
-      &:after {
-        content: '';
-        display: block;
-        border-bottom: 2px solid;
-        width: 1.2em;
-        padding-top: 0.4em;
-      }
-      
-      @include desktop {
-        display: block;
-        width: auto;
-        max-width: 46%;
-        position: absolute;
-        left: 0;
-        margin-top: 0;
-        padding-bottom: 0;
-      }
+      color: var(--accent-color);
     }
     
     p {
@@ -146,37 +114,18 @@ article.content {
         @include big-text;
     
         a {
-          border: none;
-          box-shadow: inset 0 -2px rgba(white, 0.3);
-          transition: box-shadow $transition-speed;
-          
-          @include tablet {
-            box-shadow: inset 0 -3px rgba(white, 0.3);
-          }
-  
-          &:hover {
-            box-shadow: inset 0 -2px white;
-            
-            @include tablet {
-              box-shadow: inset 0 -3px white;
-            }
-          }
+          text-decoration-color: rgba(var(--text-color), 0.2);
         }
       }
       
       a {
-        border-bottom: 1px solid rgba(white, 0.4);
-        transition: border $transition-speed;
-      
         &:hover {
-          border-bottom-color: white;
         }
       }
     }
     
     ul:not([class]) {
       @include medium-text;
-      @include no-bullets;
     }
 
     a.externalLink:after {

@@ -1,5 +1,6 @@
 body.salon58 {
-  background-color: #09332b;
+  --background-color: #09332b;
+  --accent-color: #F5A0BD;
 
   section.hero {
     @include image-container(2048, 1366, 170%, -20%);

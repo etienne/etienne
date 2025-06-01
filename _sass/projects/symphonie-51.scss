@@ -1,5 +1,6 @@
 body.symphonie-51 {
-  background-color: #0a0d0f;
+  --background-color: #0a0d0f;
+  --accent-color: #B3A992;
   
   section.hero {
     @include image-container(2048, 1480, 200%, -52.5%);

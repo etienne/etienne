@@ -1,5 +1,5 @@
 body.bibliotheques-de-montreal {
-  background-color: #198E7B;
+  --background-color: #198E7B;
 
   section.wide {
     @include image-container(2048, 1472, 130%, -15%);
