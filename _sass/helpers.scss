@@ -3,3 +3,9 @@
     display: none;
   }
 }
+
+.push {
+  @include tablet {
+    grid-column-start: 2;
+  }
+}

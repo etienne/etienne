@@ -1,5 +1,6 @@
 body.ariane {
   --background-color: #051017;
+  --accent-color: #baffc1;
   
   section.hero {
     @include image-container(1920, 1300, 230%, -55%);

@@ -1,6 +1,9 @@
 body.apollo-11 {
   --background-color: #042431;
-  background: url(../images/apollo-11/stars.png) repeat-x;
+  --accent-color: #814e7d;
+
+  background-image: url(../images/apollo-11/stars.png);
+  background-repeat: repeat-x;
   background-size: 300%;
   
   @include tablet {
@@ -17,11 +20,11 @@ body.apollo-11 {
     margin: 0 auto 2.5em;
     
     @include tablet {
-      width: 33%;
+      width: 60%;
     }
     
     @include desktop {
-      width: 30%;
+      width: 50%;
       margin-top: 2em;
       margin-left: 9%;
     }

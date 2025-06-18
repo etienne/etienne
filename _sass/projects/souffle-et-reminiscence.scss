@@ -1,5 +1,6 @@
 body.souffle-et-reminiscence {
   --background-color: black;
+  --accent-color: #FE6641;
   
   section.hero {
     @include image-container(2048, 1387, 120%, -10%);

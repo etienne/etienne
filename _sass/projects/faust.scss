@@ -1,5 +1,6 @@
 body.faust {
   --background-color: #0d0d0a;
+  --accent-color: #c79c64;
   
   section.hero {
     @include image-container(1440, 1147);

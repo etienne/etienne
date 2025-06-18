@@ -33,12 +33,6 @@ header#menu {
         gap: 26px;
       }
       
-      li {
-        &.language {
-          opacity: 0.5;
-        }
-      }
-      
       a {
         span.expanded-word {
           @include mobile-only {

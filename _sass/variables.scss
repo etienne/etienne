@@ -6,6 +6,7 @@ $desktop-large: 1280px;
   --background-color: #000;
   --text-color-rgb: 255, 255, 255;
   --text-color: rgb(var(--text-color-rgb));
+  --border-color: rgba(var(--text-color-rgb), 0.3);
   --accent-color: #894aff;
 }
 

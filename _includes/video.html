@@ -1,20 +1,14 @@
-<section class="wide">
-  <div class="plyr__video-embed" id="video" {% if include.poster %}data-poster="/images/{{ page.slug }}/{{ include.poster }}"{% endif %}>
-    <iframe
-      {% if include.source == 'youtube' %}
-      src="https://www.youtube.com/embed/{{ include.id }}?iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
-      {% else %}
-      src="https://player.vimeo.com/video/{{ include.id }}?loop=false&amp;byline=false&amp;portrait=false&amp;title=false&amp;speed=true&amp;transparent=0&amp;gesture=media"
-      {% endif %}
-      allowfullscreen
-      allowtransparency
-      allow="autoplay"
-    ></iframe>
-    <div class="play">
-      <svg aria-hidden="true" focusable="false">
-        <use xlink:href="/assets/plyr-sprites.svg#plyr-play"></use>
-      </svg>
-      {{ include.title }}
-    </div>
-  </div>
+<section class="wide video" style="aspect-ratio: {{ include.aspect-ratio | default: '16 / 9' }};">
+  <iframe
+    {% if include.source == 'youtube' %}
+    src="https://www.youtube.com/embed/{{ include.id }}?iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
+    {% else %}
+    src="https://player.vimeo.com/video/{{ include.id }}?playsinline=1&amp;loop=1&amp;muted=1&amp;autopause=0&amp;autoplay=1&amp;controls=0&amp;byline=false&amp;portrait=false&amp;title=false&amp;speed=true&amp;transparent=0&amp;gesture=media"
+    {% endif %}
+    allowfullscreen
+    allowtransparency
+    width="100%"
+    height="100%"
+    allow="autoplay"
+  ></iframe>
 </section>

@@ -1,5 +1,6 @@
 body.furies {
-  --background-color: #160064;
+  --background-color: #130152;
+  --accent-color: #FE4513;
 
   section.hero {
     @include image-container(3000, 2081, 140%, -21%);

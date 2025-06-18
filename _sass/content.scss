@@ -26,25 +26,20 @@ article.content {
       right: 0;
     }
     
-    &.side-by-side {
-      @include tablet {
-        img {
-          width: 50%;
-        }
-        
-        &.padded {
-          img {
-            width: 49%;
-            
-            & + img {
-            }
-          }
-        }
+    &.no-margins {
+      margin-bottom: 0;
+
+      @include desktop {
+        margin-bottom: 0;
       }
     }
 
-    &.no-margins {
-      @include section-no-margins;
+    &.half-padding {
+      @include half-padding;
+    }
+
+    &.no-padding {
+      padding: 0;
     }
   }
   
@@ -66,23 +61,15 @@ article.content {
   }
   
   p.credit {
-    @include grid;
     @include small-text;
     text-align: right;
-    color: rgba(white, 0.5);
-    padding-top: 1em;
-    
-    @include tablet {
-      padding-top: 1.4em;
-    }
+    color: rgba(var(--text-color-rgb), 0.5);
     
     a {
-      transition: border-color $transition-speed, color $transition-speed;
-      color: rgba(white, 0.5);
-      text-decoration-color: rgba(var(--text-color), 0.2);
-      
+      color: rgba(var(--text-color-rgb), 0.5);
+
       &:hover {
-        color: white;
+        color: var(--accent-color);
       }
     }
   }
@@ -112,15 +99,6 @@ article.content {
       
       &.intro {
         @include big-text;
-    
-        a {
-          text-decoration-color: rgba(var(--text-color), 0.2);
-        }
-      }
-      
-      a {
-        &:hover {
-        }
       }
     }
     
@@ -132,26 +110,6 @@ article.content {
       position: absolute;
       content: "→";
       margin-left: 0.3em;
-    }
-    
-    a.button {
-      font-weight: bold;
-      display: inline-block;
-      border: 2px solid white;
-      padding: 1.125em 1.5em;
-
-      @include tablet {
-        padding: 1.5em 2em;
-      }
-      
-      &.next:after {
-        position: relative;
-        top: 0.05em;
-        font-weight: normal;
-        content: "→";
-        font-size: 170%;
-        margin-left: 0.7em;
-      }
     }
   }
 }

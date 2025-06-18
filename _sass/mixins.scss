@@ -5,8 +5,8 @@
   line-height: 15px;
 
   @include tablet {
-    font-size: 14px;
-    line-height: 19px;
+    font-size: 13px;
+    line-height: 18px;
   }
 }
 
@@ -16,13 +16,13 @@
   letter-spacing: -0.01em;
 
   @include tablet {
-    font-size: 15px;
-    line-height: 21px;
+    font-size: 14px;
+    line-height: 20px;
   }
 
   @include desktop {
-    font-size: 17px;
-    line-height: 23px;
+    font-size: 16px;
+    line-height: 22px;
   }
 }
 
@@ -76,7 +76,22 @@
   @include desktop-large {
     padding: 1.4rem 1.7rem;
   }
+}
 
+@mixin half-padding {
+  padding-block: 0.35rem;
+
+  @include tablet {
+    padding-block: 0.45rem;
+  }
+
+  @include desktop {
+    padding-block: 0.65rem;
+  }
+
+  @include desktop-large {
+    padding-block: 0.7rem;
+  }
 }
 
 @mixin section-margins {
@@ -84,14 +99,6 @@
 
   @include desktop {
     margin-bottom: 3.5em;
-  }
-}
-
-@mixin section-no-margins {
-  margin-bottom: 0;
-
-  @include desktop {
-    margin-bottom: 0;
   }
 }
 
