@@ -1,6 +1,8 @@
 <dl class="credits">
   {% for credit in page.credits %}
+  <div>
     <dt>{{ credit.title }}</dt>
     <dd>{{ credit.name }}</dd>
+  </div>
   {% endfor %}
 </dl>
