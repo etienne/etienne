@@ -28,7 +28,7 @@
   direction:ltr;
   display:flex;
   flex-direction:column;
-  font-family: $font-families;
+  font-family: var(--font-family);
   font-variant-numeric:tabular-nums;
   height:100%;
   line-height:1.7;

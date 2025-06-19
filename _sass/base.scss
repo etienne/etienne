@@ -4,11 +4,11 @@
 
 html {
 	-webkit-font-smoothing: antialiased;
+  @include normal-text;
 }
 
 body {
-  @include normal-text;
-  font-family: $font-families;
+  font-family: var(--font-family);
   background-color: var(--background-color);
   color: var(--text-color);
   margin: 0;
@@ -34,7 +34,7 @@ a {
   text-decoration-thickness: 0.5px;
   text-underline-offset: 0.25em;
   text-decoration-color: var(--border-color);
-  transition: all $transition-speed;
+  transition: color var(--transition-speed);
   
   &:hover {
     color: var(--accent-color);

@@ -3,6 +3,7 @@
 @mixin small-text {
   font-size: 10px;
   line-height: 15px;
+  letter-spacing: 0;
 
   @include tablet {
     font-size: 13px;
@@ -29,6 +30,7 @@
 @mixin medium-text {
   font-size: 17px;
   line-height: 22px;
+  letter-spacing: -0.01em;
 
   @include tablet {
     font-size: 24px;
@@ -63,35 +65,11 @@
 }
 
 @mixin padding {
-  padding: 0.7rem 0.9rem;
-
-  @include tablet {
-    padding: 0.9rem 1.2rem;
-  }
-
-  @include desktop {
-    padding: 1.3rem 1.6rem;
-  }
-
-  @include desktop-large {
-    padding: 1.4rem 1.7rem;
-  }
+  padding: var(--padding-v) var(--padding-h);
 }
 
 @mixin half-padding {
-  padding-block: 0.35rem;
-
-  @include tablet {
-    padding-block: 0.45rem;
-  }
-
-  @include desktop {
-    padding-block: 0.65rem;
-  }
-
-  @include desktop-large {
-    padding-block: 0.7rem;
-  }
+  padding-block: calc(var(--padding-v) / 2);
 }
 
 @mixin section-margins {

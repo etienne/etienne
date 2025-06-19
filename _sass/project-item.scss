@@ -8,7 +8,7 @@ article.project-item {
     width: 100%;
     display: block;
     opacity: 1;
-    transition: all $transition-speed;
+    transition: opacity var(--transition-speed);
   }
   
   a {

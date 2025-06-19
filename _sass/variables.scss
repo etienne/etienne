@@ -2,13 +2,44 @@ $tablet: 768px;
 $desktop: 1024px;
 $desktop-large: 1280px;
 
+@mixin breakpoint($min-width) {
+  @media only screen and (min-width : $min-width) {
+    @content
+  }
+}
+
+@mixin tablet        { @include breakpoint($tablet)        { @content } }
+@mixin desktop       { @include breakpoint($desktop)       { @content } }
+@mixin desktop-large { @include breakpoint($desktop-large) { @content } }
+
+@mixin mobile-only {
+  @media only screen and (max-width : $tablet - 1px) {
+    @content
+  }
+}
+
 :root {
-  --background-color: #000;
+  --background-color: #1c192c;
   --text-color-rgb: 255, 255, 255;
   --text-color: rgb(var(--text-color-rgb));
   --border-color: rgba(var(--text-color-rgb), 0.3);
-  --accent-color: #894aff;
-}
+  --accent-color: #7d7491;
 
-$font-families: "UntitledSans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Verdana, sans-serif;
-$transition-speed: 0.15s;
+  --font-family: "UntitledSans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Verdana, sans-serif;
+
+  --transition-speed: 0.15s;
+
+  --padding-v: 0.9rem;
+  --padding-h: 1.2rem;
+
+  @include desktop {
+    --padding-v: 1rem;
+    --padding-h: 1.3rem;
+  }
+
+  @include desktop-large {
+    --padding-v: 1.2rem;
+    --padding-h: 1.5rem;
+  }
+
+}
