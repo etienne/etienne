@@ -13,9 +13,9 @@ article.content {
     
     &.wide {
       padding: 0;
-
+      
       & > * {
-        grid-column: 1 / -1;
+        @include span-all;
       }
     }
     

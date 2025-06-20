@@ -64,6 +64,14 @@
   }
 }
 
+@mixin gap {
+  gap: var(--padding-h);
+}
+
+@mixin span-all {
+  grid-column: 1 / -1;
+}
+
 @mixin padding {
   padding: var(--padding-v) var(--padding-h);
 }
@@ -106,22 +114,6 @@
       width: 100%;
       margin-left: 0;
     }
-  }
-}
-
-@mixin breakpoint($min-width) {
-  @media only screen and (min-width : $min-width) {
-    @content
-  }
-}
-
-@mixin tablet        { @include breakpoint($tablet)        { @content } }
-@mixin desktop       { @include breakpoint($desktop)       { @content } }
-@mixin desktop-large { @include breakpoint($desktop-large) { @content } }
-
-@mixin mobile-only {
-  @media only screen and (max-width : $tablet - 1px) {
-    @content
   }
 }
 
